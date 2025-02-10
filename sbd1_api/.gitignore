@@ -1,0 +1,6 @@
+# entorno virtual
+venv/
+
+# archivos de configuración
+.env
+
