@@ -4,3 +4,5 @@ venv/
 # archivos de configuración
 .env
 
+# archivos y carpetas de python
+__pycache__/
