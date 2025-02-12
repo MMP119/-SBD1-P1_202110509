@@ -6,5 +6,5 @@ python -m venv venv         # crear entorno virtual
 
 
 Instalar dependencias <br>
-pip install fastapi uvicorn sqlalchemy pydantic cx_Oracle python-dotenv <br>
+pip install fastapi uvicorn pydantic cx_Oracle python-dotenv <br>
 pip freeze > requirements.txt   # guarda las dependencias en requirements.txt
