@@ -4,6 +4,10 @@ from fastapi.responses import JSONResponse
 import bcrypt
 from typing import Dict
 
+
+router = APIRouter() # sirve para definir rutas
+
+
 class User(BaseModel):
     username: str
     email: str
@@ -14,14 +18,18 @@ class Login_Request(BaseModel):
     username: str
     password: str
 
+    class Config:
+        extra = "forbid"  # no permitir campos adicionales en el JSON, más allá de los definidos en la clase
 
-router = APIRouter() # sirve para definir rutas
+
 
 
 fake_db = [
     {"username": "johndoe", "email": "john@gmail.com", "password": "password", "phone": "1234567890"},
     {"username": "mario", "email": "mario@gmail.com", "password": "123", "phone": "456"},
 ]
+
+
 
 @router.post("/users", status_code=201)  # CREAR UN NUEVO USUARIO EN LA PLATAFORMA, un request (JSON)
 async def create_user(request: Request):
@@ -78,3 +86,28 @@ async def login_user(request: Request):
     session_id = "abc123"  # Esto podría ser un token JWT o algo similar
     
     return JSONResponse(content={"status": "success", "message": "User authenticated", "sessionId": session_id}, status_code=200)
+
+
+
+
+@router.get("/users/:{id}") # OBTENER PERFIL DE USUARIO POR ID
+async def get_perfil_user(id: int):
+    return fake_db[id]
+
+
+
+
+@router.put("/users/:{id}") # ACTUALIZAR USUARIO POR ID
+async def update_user(id: int, request: Request):
+    body = await request.json()
+    user = fake_db[id]
+    user.update(body)
+    return {"status": "success", "message": "User updated successfully"}
+
+
+
+
+@router.delete("/users/:{id}") # ELIMINAR O MARCAR COMO INACTIVO AL USUARIO POR ID
+async def delete_user(id: int):
+    fake_db.pop(id)
+    return {"status": "success", "message": "User deleted successfully"}
