@@ -40,18 +40,6 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="orden_de_compra_id" id="30372E3E-EDA4-885F-A836-A69524C9D4E5">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-12 07:11:58 UTC</createdTime>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="direccion_entrega" id="72E7C356-3AA4-E94E-668D-8CB24FA9E984">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 07:11:58 UTC</createdTime>

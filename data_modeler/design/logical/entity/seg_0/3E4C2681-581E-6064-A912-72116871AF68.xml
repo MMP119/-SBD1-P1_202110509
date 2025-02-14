@@ -143,33 +143,33 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="address" id="95A168ED-B5C7-A3F0-F228-D7D4159A8D72">
+<Attribute name="id_direcciones" id="2C408B78-0B27-D330-4889-5A7EB74FA3FA">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-12 03:12:43 UTC</createdTime>
+<createdTime>2025-02-14 07:04:15 UTC</createdTime>
+<generatorID>2957D5FA-58AB-6523-1277-474F396FF5CE</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<referedAttribute>273F8F22-2358-1CD1-450B-6EB231B6B083</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100 CHAR</dataTypeSize>
-<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="payment_method" id="601736E0-DE16-2CE9-9CE4-02FECA7660B6">
+<Attribute name="id_metodos_pagos" id="594F422D-4978-8ABF-19DD-350F4C829F23">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-12 03:13:37 UTC</createdTime>
+<createdTime>2025-02-14 07:05:17 UTC</createdTime>
+<generatorID>1EBFF47A-2FB1-5826-FC30-00FE81D5CA50</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<referedAttribute>1C42C58F-998D-6EC1-28FF-BE79A398F9B6</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50 CHAR</dataTypeSize>
-<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

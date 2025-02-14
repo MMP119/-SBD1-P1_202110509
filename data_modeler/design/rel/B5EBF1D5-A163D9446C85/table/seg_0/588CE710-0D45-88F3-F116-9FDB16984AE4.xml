@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A11E33C2-192E-EF27-D8FC-E2D965DA83C9" name="usuarios">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="588CE710-0D45-88F3-F116-9FDB16984AE4" name="usuarios">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>DAB8D0FC-8812-B56A-B9D4-A6E956F5492B</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_usuario" id="88076279-2222-2913-4036-BBE7260F0BC0">
+<Column name="id_usuario" id="FC1F3BC9-8B99-6140-F044-7AF59F33243E">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>CA1A3D15-5637-4A59-F212-F032189F5DB1</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="username" id="945337D1-98B7-76D0-7758-E4B782ADEC0F">
+<Column name="username" id="F3A37F75-6B22-99E5-D4E4-19BC1947AAB8">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>B883989F-12A9-B7FB-F1AD-8669852E7916</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -31,9 +31,9 @@
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="email" id="AF0FE6AA-4791-E5FC-C79B-179AFD0B6476">
+<Column name="email" id="D26AB338-7BC6-AEB8-1C37-18346131CB5D">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>C66C1E51-0B6A-5C73-4C4B-4E9D693E5434</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -43,9 +43,9 @@
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="password" id="B13B7F08-5293-A753-3168-EEF042DBBBB2">
+<Column name="password" id="94FCBF4A-C630-C0FC-8BAC-F5C6FA4AE669">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>72F53FD3-EB3C-6BC6-3B66-06FFC069EA62</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -55,9 +55,9 @@
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="phone" id="DBE2B6DC-16C4-891D-9FF7-FBE30C586EB3">
+<Column name="phone" id="9A96005F-74FD-8731-480F-BF4036DCF705">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>0791AB08-9D6C-13CC-1E78-54064E33B788</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -67,9 +67,9 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="create_at" id="864E0826-556D-E5EE-9030-24B12D309521">
+<Column name="created_at" id="180C3908-E4B1-A7AF-FDDF-19039ED3263A">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>582D4FC6-2F53-C5C6-4A57-7609E74E3988</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -79,9 +79,9 @@
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="updated_at" id="482A2515-6C7E-2A24-3CD6-6CB9E62D219C">
+<Column name="updated_at" id="255DE728-452C-80AA-FA98-53A9ADDEC6D2">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>EFAC1A9C-4A15-5275-F2F4-67A901A446A9</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -91,9 +91,9 @@
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="clientes_id_cliente" id="7750787E-8271-BB4A-AAC0-56D7057E03C1">
+<Column name="clientes_id_cliente" id="D78FBC2C-32E4-D525-D83B-0A0A8189B574">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 19:00:49 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>C4F5EF25-0E21-9299-37DA-59B273CD9AAC</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -103,43 +103,80 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="B2DD277A-6EE5-C6D7-74B9-829E33C80A7C" referredColumn="60355AEC-8E46-AD3D-9731-9D6380F56C1E"/>
+<colAssociation fkAssociation="BE4FDC3A-FE65-C0F1-7796-4EC636CF3673" referredColumn="41C6E74F-A070-5A06-A80C-B8D518663DEB"/>
+</associations>
+</Column>
+<Column name="trabajadores_id_trabajadores" id="9637FB77-8CFB-1B87-5C07-7C5DA9CBE44E">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
+<generatorID>047DEFA5-2D38-E0DE-24DD-180E8E5BC6D0</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E649139B-D9C0-A3AE-98E4-4DE88267B0A2" referredColumn="68981730-F3D2-0260-49FF-8D0B7D3EFBF3"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="806D245F-1B3A-14FF-C2B6-9927B88AD433" name="usuarios_PK">
+<ind_PK_UK id="A04F2420-2D3C-AB0B-3DC0-4FD8B535ADF7" name="usuarios_PK">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>CA4A578D-57A5-A976-AA62-C4BBAB28F3CE</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="88076279-2222-2913-4036-BBE7260F0BC0"/>
+<colUsage columnID="FC1F3BC9-8B99-6140-F044-7AF59F33243E"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="1C95E37D-FBBD-4D17-9100-842627A1D79B" name="usuarios__IDX">
+<ind_PK_UK id="B08AD9B1-8125-2F62-8599-907FF906806C" name="usuarios__IDX">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 19:00:49 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>92B5E319-2FC7-245D-500F-2B84CCD7905F</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="9637FB77-8CFB-1B87-5C07-7C5DA9CBE44E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D403F14F-3E95-7A8A-ADE8-B9C681F43A43" name="usuarios__IDXv1v1">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <relationGeneratorID>60783E66-1050-9EB4-1D0C-820F3CF8F0AF</relationGeneratorID>
 <indexColumnUsage>
-<colUsage columnID="7750787E-8271-BB4A-AAC0-56D7057E03C1"/>
+<colUsage columnID="D78FBC2C-32E4-D525-D83B-0A0A8189B574"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C9864B14-EA72-2D9F-ED2F-D22E0B0997B2" name="usuarios_clientes_FK">
+<ind_PK_UK id="DE8C7B13-4BAE-ABDD-383C-7ED1729D0559" name="usuarios_trabajadores_FK">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 19:00:49 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
+<generatorID>92B5E319-2FC7-245D-500F-2B84CCD7905F</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9637FB77-8CFB-1B87-5C07-7C5DA9CBE44E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72E657AC-2F7C-411E-CCB2-3EF6C75E8A67" name="usuarios_clientes_FK">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>60783E66-1050-9EB4-1D0C-820F3CF8F0AF</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="7750787E-8271-BB4A-AAC0-56D7057E03C1"/>
+<colUsage columnID="D78FBC2C-32E4-D525-D83B-0A0A8189B574"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

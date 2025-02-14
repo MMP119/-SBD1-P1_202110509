@@ -27,18 +27,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="orden_de_compra_id" id="C75BFA47-1770-47E0-1E41-E695D1E23BC6">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-12 07:36:15 UTC</createdTime>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="fecha_solicitud" id="867BF3C5-919E-4144-F16B-4E5D90034345">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 07:36:15 UTC</createdTime>
@@ -78,18 +66,6 @@
 <dataTypeSize>20 CHAR</dataTypeSize>
 <ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="producto_id" id="C429AB5E-B471-EDF4-9086-783048E083F2">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-12 07:43:41 UTC</createdTime>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="created_at" id="465FDCF2-FD62-69D4-5478-D02891DDC653">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 07:36:15 UTC</createdTime>
@@ -116,15 +92,29 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_orden_compra" id="35E5FC49-D93E-6B17-45F7-74CD32674E19">
+<Attribute name="id_orden_compra" id="61043A4D-EA72-B6FE-28EE-7AE6FA8088CA">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-14 00:22:16 UTC</createdTime>
-<generatorID>63842D76-5D91-6431-61F4-6F68AEEFC352</generatorID>
+<createdTime>2025-02-14 19:18:24 UTC</createdTime>
+<generatorID>0C4E5744-CCF9-4AFB-84C6-26914D3EC6EE</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
 </engineerTo>
 <referedAttribute>EE5C0135-DB62-0979-0782-331F20230C19</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_productos" id="DBE2B0BA-E789-1DCE-0525-B68F193D9AA2">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 19:21:45 UTC</createdTime>
+<generatorID>E4C06C87-6FE5-F173-9A00-D7C216DAAE07</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
+</engineerTo>
+<referedAttribute>C18FD71C-A767-CC22-221B-489FB888EBDA</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

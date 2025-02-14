@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="121F8C33-E206-DF37-9FF6-ECD2F250038F" name="sedes">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="28B6EDDF-DBE9-17CD-A79B-B214A0DD6B67" name="direcciones">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-14 00:11:33 UTC</createdTime>
+<createdTime>2025-02-14 06:23:05 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_sede" id="610570A4-6C5C-E55B-6207-EE2CF9F4CFB9">
+<Attribute name="id_direcciones" id="273F8F22-2358-1CD1-450B-6EB231B6B083">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-14 00:11:38 UTC</createdTime>
+<createdTime>2025-02-14 06:46:13 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
@@ -27,9 +27,9 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="name" id="8282B374-76CC-2D19-0BD1-8C01F2E21521">
+<Attribute name="address" id="AADD98B2-B47F-23B6-3E33-A60459AE8147">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-14 00:14:41 UTC</createdTime>
+<createdTime>2025-02-14 06:46:21 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
@@ -37,12 +37,12 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50 CHAR</dataTypeSize>
-<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="created_at" id="30EF7EB2-6BD6-6596-FEB5-CFA645C51DDD">
+<Attribute name="created_at" id="D73793A1-F652-F359-5EDA-C9D2D2551D32">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-14 00:15:16 UTC</createdTime>
+<createdTime>2025-02-14 06:46:58 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
@@ -53,9 +53,9 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="updated_at" id="6314D6A3-A289-BC6D-2749-84F8E5BC3EC6">
+<Attribute name="updated_at" id="C1C84CF7-7442-D81D-59EA-B3DA0B146994">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-14 00:15:31 UTC</createdTime>
+<createdTime>2025-02-14 06:47:14 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
@@ -65,20 +65,33 @@
 <logicalDatatype>LOGDT015</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cliente" id="B9D9CBC1-72C1-B8C8-60BD-99D9DFF64727">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 07:04:03 UTC</createdTime>
+<generatorID>2957D5FA-58AB-6523-1277-474F396FF5CE</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
+</engineerTo>
+<referedAttribute>2F7A2EC9-B3FC-7B97-946B-DA837E4CBCF7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="BA20C224-7C1E-AE7E-CDA4-C418BA9B4CDF" name="sede PK">
+<identifier id="295691C6-48AC-ACCE-A7F8-61632B1A6573" name="direcciones PK">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-14 00:13:22 UTC</createdTime>
+<createdTime>2025-02-14 06:46:53 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="false"/>
+<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>610570A4-6C5C-E55B-6207-EE2CF9F4CFB9</attributeRef>
+<attributeRef>273F8F22-2358-1CD1-450B-6EB231B6B083</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

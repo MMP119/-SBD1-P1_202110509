@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="889832FD-833C-B85D-CC47-C7896DD510D9" name="traslados_internos">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0DA2138D-0D08-9643-7590-473F2D2661EE" name="traslados_internos">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>F18BB704-A30F-803C-9EBD-D235354CD5FF</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id" id="698E8372-F600-22CC-628A-BC4623EE42DB">
+<Column name="id_traslados_internos" id="558BF421-4548-6763-D2E7-A419F5996346">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>4AFAC00F-AC0A-9358-8B69-16A5D0F1E6AA</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fecha_movimiento" id="B0C2483D-310F-BA0F-117D-0AF72F2AAEAA">
+<Column name="fecha_movimiento" id="6D8B4747-3C4F-8F56-506B-E29967A427D4">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>EFD4C5CB-8CE4-2E5C-C72B-134B22B5C748</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -31,9 +31,9 @@
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="almacen_origen_id" id="FF6E571A-DFEB-306F-8310-FB3F24257C20">
+<Column name="almacen_origen_id" id="3553A9FB-1381-F0B3-8050-256C3A331F9E">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>D9531F24-3C67-3443-B794-67342B6EE781</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -42,9 +42,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="almacen_destino_id" id="28B34D89-04F8-BEBA-A4C4-0B25B37259A9">
+<Column name="almacen_destino_id" id="C77AC586-BE20-648F-51AC-0C5D212632C9">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>DE7A94DF-E450-4A7A-EBF7-AE75AFFD9D9A</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -53,9 +53,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="producto_id" id="FA155376-1267-D144-7271-AAEEABADBB45">
+<Column name="producto_id" id="FC24ADC9-8D13-C88E-2489-BED14CDB3CED">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>251CD46B-50AE-27B3-E546-664AC89E23C2</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -64,9 +64,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="cantidad_transferida" id="46A85947-9E08-2DB0-2550-DF196871060B">
+<Column name="cantidad_transferida" id="701DFBE7-1EC3-BE51-993A-5246EFBF6306">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>BEE6BD39-DB7E-A409-0CE7-3924927E87D2</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -75,9 +75,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="estado" id="EC145100-3536-72C3-9241-EA33E6A91242">
+<Column name="estado" id="28700372-88A8-7928-DB57-C912225BA8D1">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>D4165A47-DC43-BB2C-B4D5-8743D62AE254</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -87,9 +87,9 @@
 <ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fecha_estimada_llegada" id="2B114E94-8974-3F1D-069F-B441174643DE">
+<Column name="fecha_estimada_llegada" id="A8C55AF0-7F17-06F1-138D-2990B3E1B4EE">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>BF8751F5-2ABE-E06E-2714-5707C82C1FCE</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -99,9 +99,9 @@
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="create_at" id="5741C34B-5969-DB34-6373-CA53CD44FC48">
+<Column name="created_at" id="AAFBC4E7-907C-C465-0C4A-4652D1BD8CC1">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>7EE25DB3-4FCC-1C04-40EC-D4ABBB5F805E</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -111,9 +111,9 @@
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="updated_at" id="18CCEDAB-F5C9-0B4C-55D7-22461F35CBC2">
+<Column name="updated_at" id="D9181AD8-C26B-3064-035B-2D6EC5C0816C">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>C6CDC712-5968-6B41-047A-6459A193827E</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -123,18 +123,44 @@
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="sedes_id_sede" id="12ED234D-EA78-4848-86CD-76503BBF2AAC">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
+<generatorID>7FCF9295-60BB-0C2B-4712-F28BE91A8ADE</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="10126102-FF90-1863-93BC-F19E21430FFF" referredColumn="C07E2A23-F1FA-3718-8C72-FA3DE5CEA50C"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="20B8CEA1-02F1-6B30-CF0D-E69118E18365" name="traslados_internos_PK">
+<ind_PK_UK id="373DC280-C291-2DCB-036F-D737A7741DE9" name="traslados_internos_PK">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>A54CE0B0-F969-2730-80CB-558766649E72</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="698E8372-F600-22CC-628A-BC4623EE42DB"/>
+<colUsage columnID="558BF421-4548-6763-D2E7-A419F5996346"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C4529EA-B682-BF4A-4B79-07E0659677A0" name="traslados_internos_sedes_FK">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
+<generatorID>125C94A3-D963-9F23-2542-65EE9A14973B</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12ED234D-EA78-4848-86CD-76503BBF2AAC"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

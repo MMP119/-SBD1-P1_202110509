@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E70DCF77-6AB5-FEF7-7ACC-22AE811E1090" name="pagos">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9D3EA175-C51B-646E-5F5C-63496AE38CA5" name="pagos">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>F1476507-8840-18BE-BFBB-257775F5E00B</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id" id="11276D7D-0BC3-73AF-06B7-2CD79D1F6A7C">
+<Column name="id_pagos" id="7B6715F6-8CFB-4D45-BC0B-B3A26FF07D32">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>2CD5DE5D-A7A0-1301-0945-A3CBB55E9B46</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="orden_de_compra_id" id="FC7E7244-5BBC-CFE4-E150-AFFA5CD833E0">
+<Column name="orden_de_compra_id" id="0543A1EF-7E20-9C7F-B070-316B56CC4096">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>F0D0BE0A-B3A3-6949-20B8-D840561C74F6</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -30,9 +30,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fecha_transaccion" id="1870AFE3-B0D2-8298-898B-9A194EF4AE5F">
+<Column name="fecha_transaccion" id="A6DC9E9A-DD01-FCDD-E72E-C7826110C3EF">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>1A8EC28D-C687-7EE4-7303-A9BE9384FE98</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -42,9 +42,9 @@
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="monto_total" id="7D4B751A-1893-66CD-A18B-2093C4D8A9C4">
+<Column name="monto_total" id="A7B6FD32-200F-1537-0843-613681990CCB">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>E85912FD-A219-59EA-6A36-3E3BE92AB87A</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -55,9 +55,9 @@
 <ownDataTypeParameters>,12,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="metodo_pago" id="38BC4645-FC3B-323A-8FA8-77CA9138FA25">
+<Column name="metodo_pago" id="E9BC5582-9BCF-2F86-5C7E-C834CA2562AD">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>C0149EC9-328C-09D8-C6A9-AC7FB72DA21E</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -67,9 +67,9 @@
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="estado" id="F7BF2D2E-F459-34FC-F107-FF500F22A654">
+<Column name="estado" id="29C49D40-171F-95DE-25CD-5CA9A6981D65">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>8245769C-2F00-DA0F-1B91-7E1CEFFEFF2E</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -79,9 +79,9 @@
 <ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="create_at" id="4EB12848-1454-E056-4A42-B9F105B50ADD">
+<Column name="created_at" id="C13630CE-E9B0-164F-3004-7983A7B21448">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>75871C64-4BF1-D819-1B82-5617B7703CBD</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -91,9 +91,9 @@
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="updated_at" id="14697B9D-B8B7-4561-03E8-415F72C29F08">
+<Column name="updated_at" id="57C0E27C-13D5-30A8-94A8-E43333ADF770">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>44810F9B-4380-4E13-6EF4-55413B22B392</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -103,18 +103,41 @@
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="orden_de_compra_id_orden_compra" id="B0B60A27-E941-A13E-88B3-3301F9507D17">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
+<generatorID>F9666992-55CD-A769-3602-E7F3F857F328</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="CEDD5126-7795-37EA-9EBA-2D1FF70E3457" name="pagos_PK">
+<ind_PK_UK id="C2E22F6F-FE18-A5C2-8A0F-AC6D6551F14B" name="pagos_PK">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
 <generatorID>5A909B3C-6682-4224-BFA8-AFCD9D31FE5A</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="11276D7D-0BC3-73AF-06B7-2CD79D1F6A7C"/>
+<colUsage columnID="7B6715F6-8CFB-4D45-BC0B-B3A26FF07D32"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7F8F46B7-43E8-72A6-4580-8F9399160A13" name="pagos__IDX">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 05:01:53 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>1184A736-4C4C-21D5-455B-4BBC18F93BED</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="B0B60A27-E941-A13E-88B3-3301F9507D17"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
