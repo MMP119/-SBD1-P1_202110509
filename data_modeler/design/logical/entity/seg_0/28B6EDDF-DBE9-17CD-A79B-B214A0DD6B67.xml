@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_direcciones" id="273F8F22-2358-1CD1-450B-6EB231B6B083">
+<Attribute name="id_dir" id="273F8F22-2358-1CD1-450B-6EB231B6B083">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-14 06:46:13 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -66,7 +66,7 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_cliente" id="B9D9CBC1-72C1-B8C8-60BD-99D9DFF64727">
+<Attribute name="id_c" id="B9D9CBC1-72C1-B8C8-60BD-99D9DFF64727">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-14 07:04:03 UTC</createdTime>
 <generatorID>2957D5FA-58AB-6523-1277-474F396FF5CE</generatorID>

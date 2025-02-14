@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="B7C244CE-4D8C-EA3E-89B6-218BEEC0931D" name="lista_pro_tr">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>F6A4ECB2-8305-A3E1-4EF1-D82E6AC2BE68</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_lista" id="1C35F2AB-42ED-DD38-A905-E1E680184EBD">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>8DC26BE1-B794-9C4E-A784-72D3B86737CC</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantidad_transferida" id="2DF109C3-572A-E3ED-1327-F057F8F1BA37">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>5347A40D-6EAB-86F0-AF99-F07B53605509</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_at" id="32F4507D-134E-FA3C-ED5F-285A1D5B88E5">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>33868899-F633-59D1-0728-D1BC9CEF6385</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated_at" id="32DD0B93-FDF0-7A85-AE82-AA40E6DAF047">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>F73C0E3A-EA8B-665D-21FC-7FDFCF8ADFEC</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tr_internos_id_tr_in" id="0CD2274D-3579-BE88-CB7B-8F1A9D52B76D">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>C16C93A7-A287-ECD8-0574-E46964AA9B8E</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C60C0B9D-5AFA-0861-8D7A-FA744CA650FC" referredColumn="3B87DFD8-9428-916E-E8A8-282AD627F6E4"/>
+</associations>
+</Column>
+<Column name="productos_id_pro" id="0B14586A-21E2-AF39-C1E3-32BA3F58E80D">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>C613BE67-DBA7-EFA8-80DE-7B8804AE5B5C</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="87CAC727-4E78-E988-E1A9-17ADAC259063" referredColumn="181896DB-498B-8B52-E709-4834D5B2A1B0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6529F6E4-00FD-4D1B-573F-ADEED7D03EC9" name="lista_pro_tr_PK">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>1ED561C8-75C6-D4A1-2E28-0E0EE50A265B</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C35F2AB-42ED-DD38-A905-E1E680184EBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4442CCD7-FE39-8531-CCE5-70BAEA19BFC2" name="lista_pro_tr_tr_internos_FK">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>E3C154E2-9439-E031-CD8A-995D3301F55E</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0CD2274D-3579-BE88-CB7B-8F1A9D52B76D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C81D0DF4-5E36-4433-C50B-FEA449DCA876" name="lista_pro_tr_productos_FK">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>05B43CCB-D481-9B3C-EA52-821B760371F2</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B14586A-21E2-AF39-C1E3-32BA3F58E80D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

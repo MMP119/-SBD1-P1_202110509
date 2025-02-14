@@ -27,7 +27,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="name" id="8282B374-76CC-2D19-0BD1-8C01F2E21521">
+<Attribute name="name_sede" id="8282B374-76CC-2D19-0BD1-8C01F2E21521">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-14 00:14:41 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>

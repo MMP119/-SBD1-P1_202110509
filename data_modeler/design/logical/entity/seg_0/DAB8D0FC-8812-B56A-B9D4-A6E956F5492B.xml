@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_usuario" id="CA1A3D15-5637-4A59-F212-F032189F5DB1">
+<Attribute name="id_u" id="CA1A3D15-5637-4A59-F212-F032189F5DB1">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-13 17:54:24 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -53,7 +53,7 @@
 <dataTypeSize>100 CHAR</dataTypeSize>
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="password" id="72F53FD3-EB3C-6BC6-3B66-06FFC069EA62">
+<Attribute name="password_user" id="72F53FD3-EB3C-6BC6-3B66-06FFC069EA62">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-13 17:54:24 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -105,7 +105,7 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_cliente" id="C4F5EF25-0E21-9299-37DA-59B273CD9AAC">
+<Attribute name="id_c" id="C4F5EF25-0E21-9299-37DA-59B273CD9AAC">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-13 19:00:10 UTC</createdTime>
 <generatorID>60783E66-1050-9EB4-1D0C-820F3CF8F0AF</generatorID>
@@ -119,7 +119,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_trabajadores" id="047DEFA5-2D38-E0DE-24DD-180E8E5BC6D0">
+<Attribute name="id_t" id="047DEFA5-2D38-E0DE-24DD-180E8E5BC6D0">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-13 23:46:13 UTC</createdTime>
 <generatorID>92B5E319-2FC7-245D-500F-2B84CCD7905F</generatorID>

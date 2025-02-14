@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_categoria" id="A8F2C425-7447-9104-8D32-95F68DBD405A">
+<Attribute name="id_cat" id="A8F2C425-7447-9104-8D32-95F68DBD405A">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-14 19:11:23 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -27,7 +27,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="name" id="E87B13D1-FF21-318A-D301-475B5C8A11F2">
+<Attribute name="name_categoria" id="E87B13D1-FF21-318A-D301-475B5C8A11F2">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-14 19:11:23 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -66,7 +66,7 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_productos" id="0943CCEF-1EA0-1C6B-B826-D178FD7CC28E">
+<Attribute name="id_pro" id="0943CCEF-1EA0-1C6B-B826-D178FD7CC28E">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-14 19:12:15 UTC</createdTime>
 <generatorID>A6FB3019-CD11-8AF0-F951-B2AF99B87FD0</generatorID>

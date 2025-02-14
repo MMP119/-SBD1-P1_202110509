@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_imagenes" id="E608B628-B093-75D6-A8EB-6E490259067B">
+<Attribute name="id_img" id="E608B628-B093-75D6-A8EB-6E490259067B">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-14 06:11:33 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -66,7 +66,7 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_productos" id="5C0D1FB9-5314-13B3-E3BE-806D62AD2552">
+<Attribute name="id_pro" id="5C0D1FB9-5314-13B3-E3BE-806D62AD2552">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-14 06:26:51 UTC</createdTime>
 <generatorID>0C6DBADB-6EF3-5E61-F9AB-765FBDBCBBDF</generatorID>

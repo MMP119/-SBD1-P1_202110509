@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3BC21D35-1677-1880-8D79-1E5D6C7AF640" name="categorias">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>EEBDCE0A-FDC7-6A4E-FA5E-75B6CD8D36E8</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cat" id="CA5D4281-3F56-3F58-E67B-EC8E74B75FF6">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>A8F2C425-7447-9104-8D32-95F68DBD405A</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name_categoria" id="6BDA650C-7C6B-281E-2EE3-A7C0D0F5DFAB">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>E87B13D1-FF21-318A-D301-475B5C8A11F2</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_at" id="9305CC99-4D70-3D09-7F50-D57A88F76F2D">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>13301855-1689-965D-ED82-223F0305583D</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated_at" id="D10A8031-C727-646A-B1DB-B00116BBD7E7">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>72FE9585-E428-211C-7F45-D459FCD10AF4</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="productos_id_pro" id="33FF2935-1D29-C624-44BF-7999BF867A22">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>0943CCEF-1EA0-1C6B-B826-D178FD7CC28E</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3ECD463E-D2F8-ED1F-3DE8-44B4E2CF9CAE" referredColumn="181896DB-498B-8B52-E709-4834D5B2A1B0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C4DA83B2-5ED9-BCD5-2431-A90DCF67CB8E" name="categorias_PK">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>6B6DB291-FBF9-E7DB-F633-0E9A85CD32A6</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA5D4281-3F56-3F58-E67B-EC8E74B75FF6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D54A8885-9226-D80B-9E30-5DD887375E5E" name="categorias__IDX">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>A6FB3019-CD11-8AF0-F951-B2AF99B87FD0</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="33FF2935-1D29-C624-44BF-7999BF867A22"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="52423FC6-4079-5FD4-61C9-40045272AA46" name="categorias_productos_FK">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>A6FB3019-CD11-8AF0-F951-B2AF99B87FD0</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33FF2935-1D29-C624-44BF-7999BF867A22"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

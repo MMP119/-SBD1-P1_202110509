@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F18BB704-A30F-803C-9EBD-D235354CD5FF" name="traslados_internos">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F18BB704-A30F-803C-9EBD-D235354CD5FF" name="tr_internos">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 07:48:40 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_traslados_internos" id="4AFAC00F-AC0A-9358-8B69-16A5D0F1E6AA">
+<Attribute name="id_tr_in" id="4AFAC00F-AC0A-9358-8B69-16A5D0F1E6AA">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 07:48:40 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -55,30 +55,6 @@
 <Attribute name="almacen_destino_id" id="DE7A94DF-E450-4A7A-EBF7-AE75AFFD9D9A">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 07:50:33 UTC</createdTime>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="producto_id" id="251CD46B-50AE-27B3-E546-664AC89E23C2">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-12 07:48:40 UTC</createdTime>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="cantidad_transferida" id="BEE6BD39-DB7E-A409-0CE7-3924927E87D2">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-12 07:48:40 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>

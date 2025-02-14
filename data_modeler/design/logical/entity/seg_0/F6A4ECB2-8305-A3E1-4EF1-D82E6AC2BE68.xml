@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F6A4ECB2-8305-A3E1-4EF1-D82E6AC2BE68" name="lista_productos_traslado">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F6A4ECB2-8305-A3E1-4EF1-D82E6AC2BE68" name="lista_pro_tr">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-14 00:38:02 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -15,33 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_llista_traslados" id="8DC26BE1-B794-9C4E-A784-72D3B86737CC">
+<Attribute name="id_lista" id="8DC26BE1-B794-9C4E-A784-72D3B86737CC">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-14 00:38:27 UTC</createdTime>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="traslados_internos_id" id="AA6E238A-3512-76FD-5467-C520996CCB41">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-14 00:38:43 UTC</createdTime>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="producto_id" id="50DE18AD-59E4-FE59-C938-311FBB98A8DC">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-14 00:39:11 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
@@ -89,7 +65,7 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_traslados_internos" id="C16C93A7-A287-ECD8-0574-E46964AA9B8E">
+<Attribute name="id_tr_in" id="C16C93A7-A287-ECD8-0574-E46964AA9B8E">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-14 00:42:33 UTC</createdTime>
 <generatorID>E3C154E2-9439-E031-CD8A-995D3301F55E</generatorID>
@@ -103,7 +79,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_productos" id="C613BE67-DBA7-EFA8-80DE-7B8804AE5B5C">
+<Attribute name="id_pro" id="C613BE67-DBA7-EFA8-80DE-7B8804AE5B5C">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-14 00:45:40 UTC</createdTime>
 <generatorID>05B43CCB-D481-9B3C-EA52-821B760371F2</generatorID>

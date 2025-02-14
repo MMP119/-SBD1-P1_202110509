@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E9544B2-F31F-C6ED-E1F3-07FDBE063CBB" name="departamentos">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>252FA6F1-6BAD-3EAD-0FA3-75D531E3E20E</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_dep" id="A4AF36A9-018E-B56A-0650-A1108697969E">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>0EDB4C4A-3E29-200D-4A2F-8FE1E613711A</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name_departamento" id="C520D53D-D634-825E-14D5-3025541F62CE">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>473EF258-2E43-168D-003D-FE2940327D12</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_at" id="45F7E520-E669-85DB-F0F4-2B0F0C64227C">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>2CE181E1-85E7-8A43-141F-A6176D5CB851</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated_at" id="A06F64F7-65E7-3290-8E5F-E818A0811E39">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>A2F81951-1EEA-38B6-8F07-8C1EC4DC80D9</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="trabajadores_id_t" id="4CDF57B1-99F0-D1A2-836D-E95E7C35323A">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>FD1D7F22-54EE-D28D-43BC-3FDCE2E07BE6</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C66B2B3-F5D7-7443-9F83-DFD1A8AF770E" referredColumn="7659D9D5-8149-5BFD-5062-C9FCD5B550A2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5B50AC8C-36EC-7F8D-E3BC-A6C42206844C" name="departamentos_PK">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>224FE423-76AF-A710-7097-0F511260A418</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4AF36A9-018E-B56A-0650-A1108697969E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B04B40CD-EDC9-A4C3-BEE2-888163968391" name="departamentos__IDX">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>E8842C47-6401-B61F-0456-4A4F02909F46</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="4CDF57B1-99F0-D1A2-836D-E95E7C35323A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="356093E6-3FF1-6D54-E2E1-8909CB9B72B1" name="departamentos_trabajadores_FK">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 22:43:59 UTC</createdTime>
+<generatorID>E8842C47-6401-B61F-0456-4A4F02909F46</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CDF57B1-99F0-D1A2-836D-E95E7C35323A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

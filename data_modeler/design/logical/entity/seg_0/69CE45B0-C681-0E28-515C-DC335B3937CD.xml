@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_trabajadores" id="08C07DAB-C067-9405-03E2-6843798ACC1B">
+<Attribute name="id_t" id="08C07DAB-C067-9405-03E2-6843798ACC1B">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 03:16:09 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -39,7 +39,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="name" id="016CB404-016C-3943-374E-E21EAAF8E288">
+<Attribute name="name_trabajador" id="016CB404-016C-3943-374E-E21EAAF8E288">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 03:16:09 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -65,7 +65,7 @@
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="job" id="BDCCAA1C-E35B-D18F-3B27-7B9DA1ED5288">
+<Attribute name="job_trabajador" id="BDCCAA1C-E35B-D18F-3B27-7B9DA1ED5288">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 03:16:43 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -130,7 +130,7 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="active" id="1A0871E1-0B32-FF9B-9E35-0990FD1D85B5">
+<Attribute name="activo" id="1A0871E1-0B32-FF9B-9E35-0990FD1D85B5">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 03:16:09 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -157,7 +157,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_departamentos" id="94483D09-A803-F7C6-F3E5-7B3D3FFEDA30">
+<Attribute name="id_dep" id="94483D09-A803-F7C6-F3E5-7B3D3FFEDA30">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-14 06:49:08 UTC</createdTime>
 <generatorID>E8842C47-6401-B61F-0456-4A4F02909F46</generatorID>
