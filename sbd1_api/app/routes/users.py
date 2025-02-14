@@ -3,6 +3,7 @@ from pydantic import BaseModel, ValidationError
 from fastapi.responses import JSONResponse
 import bcrypt
 from typing import Dict
+import cx_Oracle
 
 
 router = APIRouter() # sirve para definir rutas
@@ -23,16 +24,8 @@ class Login_Request(BaseModel):
 
 
 
-
-fake_db = [
-    {"username": "johndoe", "email": "john@gmail.com", "password": "password", "phone": "1234567890"},
-    {"username": "mario", "email": "mario@gmail.com", "password": "123", "phone": "456"},
-]
-
-
-
 @router.post("/users", status_code=201)  # CREAR UN NUEVO USUARIO EN LA PLATAFORMA, un request (JSON)
-async def create_user(request: Request):
+async def create_user(request: User):
 
     body = await request.json() # se obtiene el cuerpo de la solicitud para convertirlo en un diccionario
 
@@ -92,16 +85,13 @@ async def login_user(request: Request):
 
 @router.get("/users/:{id}") # OBTENER PERFIL DE USUARIO POR ID
 async def get_perfil_user(id: int):
-    return fake_db[id]
+    return {"status": "success", "message": "User retrieved successfully"}
 
 
 
 
 @router.put("/users/:{id}") # ACTUALIZAR USUARIO POR ID
 async def update_user(id: int, request: Request):
-    body = await request.json()
-    user = fake_db[id]
-    user.update(body)
     return {"status": "success", "message": "User updated successfully"}
 
 
@@ -109,5 +99,4 @@ async def update_user(id: int, request: Request):
 
 @router.delete("/users/:{id}") # ELIMINAR O MARCAR COMO INACTIVO AL USUARIO POR ID
 async def delete_user(id: int):
-    fake_db.pop(id)
     return {"status": "success", "message": "User deleted successfully"}

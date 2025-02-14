@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="08C07DAB-C067-9405-03E2-6843798ACC1B">
+<Attribute name="id_trabajadores" id="08C07DAB-C067-9405-03E2-6843798ACC1B">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 03:16:09 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -116,7 +116,7 @@
 <dataTypeSize>100 CHAR</dataTypeSize>
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="create_at" id="0FCBF28D-0E2A-7F4B-4BC2-3F16AFAEBC53">
+<Attribute name="created_at" id="0FCBF28D-0E2A-7F4B-4BC2-3F16AFAEBC53">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 03:16:09 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -168,6 +168,20 @@
 <logicalDatatype>LOGDT006</logicalDatatype>
 <dataTypeSize>1 BYTE</dataTypeSize>
 <ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_sede" id="EF3CF2EC-F97E-571F-4C5C-F75B6FA9CC85">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 00:13:24 UTC</createdTime>
+<generatorID>B28035AE-9043-525D-93A0-B23D935D0847</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
+</engineerTo>
+<referedAttribute>610570A4-6C5C-E55B-6207-EE2CF9F4CFB9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

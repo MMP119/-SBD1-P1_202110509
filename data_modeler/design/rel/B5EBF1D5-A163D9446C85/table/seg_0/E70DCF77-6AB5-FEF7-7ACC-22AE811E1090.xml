@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E70DCF77-6AB5-FEF7-7ACC-22AE811E1090" name="pagos">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<generatorID>F1476507-8840-18BE-BFBB-257775F5E00B</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="11276D7D-0BC3-73AF-06B7-2CD79D1F6A7C">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<generatorID>2CD5DE5D-A7A0-1301-0945-A3CBB55E9B46</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="orden_de_compra_id" id="FC7E7244-5BBC-CFE4-E150-AFFA5CD833E0">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<generatorID>F0D0BE0A-B3A3-6949-20B8-D840561C74F6</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_transaccion" id="1870AFE3-B0D2-8298-898B-9A194EF4AE5F">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<generatorID>1A8EC28D-C687-7EE4-7303-A9BE9384FE98</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="monto_total" id="7D4B751A-1893-66CD-A18B-2093C4D8A9C4">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<generatorID>E85912FD-A219-59EA-6A36-3E3BE92AB87A</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="metodo_pago" id="38BC4645-FC3B-323A-8FA8-77CA9138FA25">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<generatorID>C0149EC9-328C-09D8-C6A9-AC7FB72DA21E</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="F7BF2D2E-F459-34FC-F107-FF500F22A654">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<generatorID>8245769C-2F00-DA0F-1B91-7E1CEFFEFF2E</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="create_at" id="4EB12848-1454-E056-4A42-B9F105B50ADD">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<generatorID>75871C64-4BF1-D819-1B82-5617B7703CBD</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated_at" id="14697B9D-B8B7-4561-03E8-415F72C29F08">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<generatorID>44810F9B-4380-4E13-6EF4-55413B22B392</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CEDD5126-7795-37EA-9EBA-2D1FF70E3457" name="pagos_PK">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<generatorID>5A909B3C-6682-4224-BFA8-AFCD9D31FE5A</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11276D7D-0BC3-73AF-06B7-2CD79D1F6A7C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

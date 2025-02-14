@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="58073001-218E-9368-251F-868B880CAA37" name="devoluciones">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<generatorID>4DFFF43E-571B-B6B8-5CE3-D928510B7FFA</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="C953AF1E-683B-5FE6-D934-DE39E3C435D1">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<generatorID>13B05356-A2C2-775F-8C6B-6BBF627BA283</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="orden_de_compra_id" id="C52E5894-FBCF-C081-C3FD-40C956FD09CA">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<generatorID>C75BFA47-1770-47E0-1E41-E695D1E23BC6</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_solicitud" id="A524A2A5-6B89-8EA2-9838-ABE22B92EA44">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<generatorID>867BF3C5-919E-4144-F16B-4E5D90034345</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="motivo" id="A49CBFCB-B5C7-CFFF-3418-FE672F0F01A2">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<generatorID>7661621E-59D5-FAC7-A824-5B843AF7C9C6</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="3A55A63A-2BA1-915F-B224-17D09BCFA66F">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<generatorID>EE3CA248-4218-7675-7D35-466A9C0ED63C</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="producto_id" id="9806A078-5D07-8A71-4259-844198727E9D">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<generatorID>C429AB5E-B471-EDF4-9086-783048E083F2</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="create_at" id="46A5F962-191A-E53D-FE11-B51D9D893EFA">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<generatorID>465FDCF2-FD62-69D4-5478-D02891DDC653</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated_at" id="13CDCA3C-0053-9001-F0A2-203FED4F7478">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<generatorID>D733609D-D625-4FB1-8606-7FAA61D16CD1</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="93015156-F7B2-D340-4CD3-1AC3436A8239" name="devoluciones_PK">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-13 18:59:23 UTC</createdTime>
+<generatorID>F57056F6-3FD3-0C22-CC04-5906AC5E09A9</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C953AF1E-683B-5FE6-D934-DE39E3C435D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

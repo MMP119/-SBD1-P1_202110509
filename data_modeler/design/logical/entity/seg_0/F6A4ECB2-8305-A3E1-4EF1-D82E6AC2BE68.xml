@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F1476507-8840-18BE-BFBB-257775F5E00B" name="pagos">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F6A4ECB2-8305-A3E1-4EF1-D82E6AC2BE68" name="lista_productos_traslado">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-12 06:53:46 UTC</createdTime>
+<createdTime>2025-02-14 00:38:02 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_pagos" id="2CD5DE5D-A7A0-1301-0945-A3CBB55E9B46">
+<Attribute name="id_llista_traslados" id="8DC26BE1-B794-9C4E-A784-72D3B86737CC">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-12 06:53:46 UTC</createdTime>
+<createdTime>2025-02-14 00:38:27 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
@@ -27,9 +27,9 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="orden_de_compra_id" id="F0D0BE0A-B3A3-6949-20B8-D840561C74F6">
+<Attribute name="traslados_internos_id" id="AA6E238A-3512-76FD-5467-C520996CCB41">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-12 06:53:46 UTC</createdTime>
+<createdTime>2025-02-14 00:38:43 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
@@ -39,9 +39,33 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="fecha_transaccion" id="1A8EC28D-C687-7EE4-7303-A9BE9384FE98">
+<Attribute name="producto_id" id="50DE18AD-59E4-FE59-C938-311FBB98A8DC">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-12 06:53:46 UTC</createdTime>
+<createdTime>2025-02-14 00:39:11 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cantidad_transferida" id="5347A40D-6EAB-86F0-AF99-F07B53605509">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 00:39:24 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="created_at" id="33868899-F633-59D1-0728-D1BC9CEF6385">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-14 00:40:35 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
@@ -52,49 +76,9 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="monto_total" id="E85912FD-A219-59EA-6A36-3E3BE92AB87A">
+<Attribute name="updated_at" id="F73C0E3A-EA8B-665D-21FC-7FDFCF8ADFEC">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-12 06:53:46 UTC</createdTime>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT026</logicalDatatype>
-<dataTypePrecision>12</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,12,2</ownDataTypeParameters>
-</Attribute>
-<Attribute name="metodo_pago" id="C0149EC9-328C-09D8-C6A9-AC7FB72DA21E">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-12 06:59:20 UTC</createdTime>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100 CHAR</dataTypeSize>
-<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="estado" id="8245769C-2F00-DA0F-1B91-7E1CEFFEFF2E">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-12 06:53:46 UTC</createdTime>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20 CHAR</dataTypeSize>
-<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="created_at" id="75871C64-4BF1-D819-1B82-5617B7703CBD">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-12 06:53:46 UTC</createdTime>
+<createdTime>2025-02-14 00:40:47 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
@@ -105,28 +89,29 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="updated_at" id="44810F9B-4380-4E13-6EF4-55413B22B392">
+<Attribute name="id_traslados_internos" id="C16C93A7-A287-ECD8-0574-E46964AA9B8E">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-12 06:53:46 UTC</createdTime>
+<createdTime>2025-02-14 00:42:33 UTC</createdTime>
+<generatorID>E3C154E2-9439-E031-CD8A-995D3301F55E</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
 </engineerTo>
+<referedAttribute>4AFAC00F-AC0A-9358-8B69-16A5D0F1E6AA</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT015</logicalDatatype>
-<dataTypePrecision>0</dataTypePrecision>
-<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_orden_compra" id="F9666992-55CD-A769-3602-E7F3F857F328">
+<Attribute name="id_productos" id="C613BE67-DBA7-EFA8-80DE-7B8804AE5B5C">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 23:39:14 UTC</createdTime>
-<generatorID>1184A736-4C4C-21D5-455B-4BBC18F93BED</generatorID>
+<createdTime>2025-02-14 00:45:40 UTC</createdTime>
+<generatorID>05B43CCB-D481-9B3C-EA52-821B760371F2</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
 </engineerTo>
-<referedAttribute>EE5C0135-DB62-0979-0782-331F20230C19</referedAttribute>
+<referedAttribute>C18FD71C-A767-CC22-221B-489FB888EBDA</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -134,17 +119,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="5A909B3C-6682-4224-BFA8-AFCD9D31FE5A" name="USUARIO PK">
+<identifier id="1ED561C8-75C6-D4A1-2E28-0E0EE50A265B" name="lista_productos_traslado PK">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-12 06:53:46 UTC</createdTime>
+<createdTime>2025-02-14 00:38:41 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="false"/>
+<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>2CD5DE5D-A7A0-1301-0945-A3CBB55E9B46</attributeRef>
+<attributeRef>8DC26BE1-B794-9C4E-A784-72D3B86737CC</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

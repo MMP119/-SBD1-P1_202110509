@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="C18FD71C-A767-CC22-221B-489FB888EBDA">
+<Attribute name="id_productos" id="C18FD71C-A767-CC22-221B-489FB888EBDA">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 05:15:29 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -93,7 +93,7 @@
 <dataTypeSize>100 CHAR</dataTypeSize>
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="inventario" id="4F37BF9E-5167-E069-1533-497FF1CF7BEB">
+<Attribute name="inventario_por_sede" id="4F37BF9E-5167-E069-1533-497FF1CF7BEB">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 05:26:47 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -130,19 +130,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="email" id="AB822560-C258-DC78-9787-847DB9D718D0">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-12 05:15:29 UTC</createdTime>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100 CHAR</dataTypeSize>
-<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="active" id="F24F7FAE-AE37-7004-0C40-E9F2DE09BCC9">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 05:15:29 UTC</createdTime>
@@ -170,7 +157,7 @@
 <dataTypeSize>255 CHAR</dataTypeSize>
 <ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="create_at" id="24A02E92-681B-775B-70A1-AB1BF7CA8412">
+<Attribute name="created_at" id="24A02E92-681B-775B-70A1-AB1BF7CA8412">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 05:15:29 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -195,6 +182,20 @@
 <logicalDatatype>LOGDT015</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_lista_productos" id="F0997E7B-CBF6-6424-EA47-5E9E60172542">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-13 23:45:17 UTC</createdTime>
+<generatorID>E3B6E2BB-9D7A-CD61-EB70-094D3219415F</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
+</engineerTo>
+<referedAttribute>DAE1DD92-7CD5-2E5F-F305-B6AEFDEBDD21</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
