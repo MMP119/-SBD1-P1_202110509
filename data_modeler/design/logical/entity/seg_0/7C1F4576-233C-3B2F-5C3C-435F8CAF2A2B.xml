@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_met_pago" id="1C42C58F-998D-6EC1-28FF-BE79A398F9B6">
+<Attribute name="id_metodo_pago" id="1C42C58F-998D-6EC1-28FF-BE79A398F9B6">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-14 07:02:26 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -27,7 +27,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="payment_method" id="2CC5D1DE-F550-BD43-9797-B4FD415A6421">
+<Attribute name="metodo_pago" id="2CC5D1DE-F550-BD43-9797-B4FD415A6421">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-14 07:02:47 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -37,8 +37,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100 CHAR</dataTypeSize>
-<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>25 CHAR</dataTypeSize>
+<ownDataTypeParameters>25 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="created_at" id="F7CF236F-0942-B4F0-DE4E-98E317CD9E6F">
 <createdBy>mario</createdBy>
@@ -75,6 +75,20 @@
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
 </engineerTo>
 <referedAttribute>2F7A2EC9-B3FC-7B97-946B-DA837E4CBCF7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_orden_pago" id="DD6456E3-4B2B-3815-3BE9-6BFF70DB0D28">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 20:28:24 UTC</createdTime>
+<generatorID>08108E70-8B51-103D-2D68-6D46E6A2E287</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
+</engineerTo>
+<referedAttribute>2CD5DE5D-A7A0-1301-0945-A3CBB55E9B46</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

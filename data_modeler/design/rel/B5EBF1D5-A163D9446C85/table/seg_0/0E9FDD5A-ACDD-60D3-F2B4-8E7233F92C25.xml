@@ -1,0 +1,174 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0E9FDD5A-ACDD-60D3-F2B4-8E7233F92C25" name="orden_compra">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<generatorID>273E8389-D466-D553-144D-5CFFDBACA055</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_orden_compra" id="B50ED2BA-EED3-CC85-1631-45F7D230ACC5">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<generatorID>EE5C0135-DB62-0979-0782-331F20230C19</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total" id="1C4134C7-F571-AA0D-E6AB-AC5EF338D756">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<generatorID>69D92EFD-E7A3-5B70-C686-558D35B931FA</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_at" id="0D99BB8B-68AD-D3F0-5944-A54E72298FD1">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<generatorID>C5D03EFB-DFC7-A9B6-E2ED-E1A76F45C4AF</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated_at" id="8B60569B-9945-BB37-F6D8-FAD765A2069D">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<generatorID>BB8D05A8-ABFF-AE73-9AC8-F98360A67B30</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clientes_id_c" id="2380AAF9-44C0-56C3-BF07-7989143AAC56">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<generatorID>F2C4E6FE-FC55-456C-CF0F-6DB44433441B</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="262CA42E-A8A4-5AFF-C1EB-A689D255DA54" referredColumn="35055159-FF17-7561-FF80-BDE85D868E03"/>
+</associations>
+</Column>
+<Column name="pagos_id_orden_pago" id="BFD2508F-BA88-854B-508D-6F05BF52C5CA">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<generatorID>850749AB-1B02-7474-C9A3-3415885ED288</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C2135752-569C-5669-5AD9-48F850392069" referredColumn="5431B7B3-80A2-F92C-9822-8069C6EC5D96"/>
+</associations>
+</Column>
+<Column name="envios_id_envios" id="2EE2F898-A05D-4118-E9D8-7D674083AE41">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<generatorID>F85664C5-FF98-4EA7-0E11-50404C16771A</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ACDCB9DD-B85A-1028-184B-B5DE51A73CA5" referredColumn="826B1D4D-E8A1-4DE5-7A13-73739CD123DE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3135C123-29D8-8045-D7DC-27C9B492B24B" name="orden_compra_PK">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<generatorID>455783F7-EDC7-C79F-9050-3E6F9CCD114E</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B50ED2BA-EED3-CC85-1631-45F7D230ACC5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4B2D335-F474-BD18-FC95-8DA8AEAD1DAA" name="orden_compra__IDX">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>1184A736-4C4C-21D5-455B-4BBC18F93BED</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="BFD2508F-BA88-854B-508D-6F05BF52C5CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F9973AC2-6C75-AA31-A0FA-19C0368EB60E" name="orden_compra__IDXv1">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>40B3B703-4917-A269-8AD2-21FBC22E51AB</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="2EE2F898-A05D-4118-E9D8-7D674083AE41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="50C9297C-45C8-2CB3-9963-EE4F1EDF5CC5" name="orden_compra_clientes_FK">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<generatorID>EEEE15EE-5E29-EB67-FEDB-D4558691EE55</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2380AAF9-44C0-56C3-BF07-7989143AAC56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B3BE493-8C23-939F-1643-F294000683D8" name="orden_compra_pagos_FK">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<generatorID>1184A736-4C4C-21D5-455B-4BBC18F93BED</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BFD2508F-BA88-854B-508D-6F05BF52C5CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="426BFCE4-5EEC-637A-551E-C59265372D04" name="orden_compra_envios_FK">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<generatorID>40B3B703-4917-A269-8AD2-21FBC22E51AB</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EE2F898-A05D-4118-E9D8-7D674083AE41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_dev" id="13B05356-A2C2-775F-8C6B-6BBF627BA283">
+<Attribute name="id_devolucion" id="13B05356-A2C2-775F-8C6B-6BBF627BA283">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 07:36:15 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -101,20 +101,6 @@
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
 </engineerTo>
 <referedAttribute>EE5C0135-DB62-0979-0782-331F20230C19</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id_pro" id="DBE2B0BA-E789-1DCE-0525-B68F193D9AA2">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-14 19:21:45 UTC</createdTime>
-<generatorID>E4C06C87-6FE5-F173-9A00-D7C216DAAE07</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<referedAttribute>C18FD71C-A767-CC22-221B-489FB888EBDA</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

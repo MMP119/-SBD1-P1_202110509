@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_pro" id="C18FD71C-A767-CC22-221B-489FB888EBDA">
+<Attribute name="id_producto" id="C18FD71C-A767-CC22-221B-489FB888EBDA">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 05:15:29 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -40,7 +40,7 @@
 <dataTypeSize>10 CHAR</dataTypeSize>
 <ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="name_producto" id="A7B5A66A-0F59-9E89-CCCE-9F178AE89663">
+<Attribute name="nombre" id="A7B5A66A-0F59-9E89-CCCE-9F178AE89663">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 05:15:29 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -53,7 +53,7 @@
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="description_producto" id="66125F62-CA4D-8368-93D7-6D728D648874">
+<Attribute name="descripcion" id="66125F62-CA4D-8368-93D7-6D728D648874">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 05:15:29 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -66,7 +66,7 @@
 <dataTypeSize>200 CHAR</dataTypeSize>
 <ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="price" id="EBABA1C8-5C41-913F-30C5-32253CA98256">
+<Attribute name="precio" id="EBABA1C8-5C41-913F-30C5-32253CA98256">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 05:15:29 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -93,18 +93,6 @@
 <dataTypeSize>100 CHAR</dataTypeSize>
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="category_id" id="203BA005-2B43-C51F-99F6-C44E606BFEAD">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-12 05:15:29 UTC</createdTime>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="activo" id="F24F7FAE-AE37-7004-0C40-E9F2DE09BCC9">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 05:15:29 UTC</createdTime>
@@ -114,9 +102,9 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>1 BYTE</dataTypeSize>
-<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="created_at" id="24A02E92-681B-775B-70A1-AB1BF7CA8412">
 <createdBy>mario</createdBy>
@@ -158,7 +146,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_cat" id="72F1AF6D-E13C-8D7E-5316-7C1F7E94E4B0">
+<Attribute name="id_categoria" id="72F1AF6D-E13C-8D7E-5316-7C1F7E94E4B0">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-14 19:12:28 UTC</createdTime>
 <generatorID>A6FB3019-CD11-8AF0-F951-B2AF99B87FD0</generatorID>

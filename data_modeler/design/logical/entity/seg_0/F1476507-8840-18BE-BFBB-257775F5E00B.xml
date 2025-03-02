@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_pagos" id="2CD5DE5D-A7A0-1301-0945-A3CBB55E9B46">
+<Attribute name="id_orden_pago" id="2CD5DE5D-A7A0-1301-0945-A3CBB55E9B46">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 06:53:46 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -53,19 +53,6 @@
 <dataTypePrecision>12</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,12,2</ownDataTypeParameters>
-</Attribute>
-<Attribute name="metodo_pago" id="C0149EC9-328C-09D8-C6A9-AC7FB72DA21E">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-12 06:59:20 UTC</createdTime>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100 CHAR</dataTypeSize>
-<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="estado" id="8245769C-2F00-DA0F-1B91-7E1CEFFEFF2E">
 <createdBy>mario</createdBy>
@@ -115,6 +102,20 @@
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
 </engineerTo>
 <referedAttribute>EE5C0135-DB62-0979-0782-331F20230C19</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_metodo_pago" id="23CF016B-113B-A80E-5253-5E30209AE0AD">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 20:28:38 UTC</createdTime>
+<generatorID>08108E70-8B51-103D-2D68-6D46E6A2E287</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
+</engineerTo>
+<referedAttribute>1C42C58F-998D-6EC1-28FF-BE79A398F9B6</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

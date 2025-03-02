@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E087A714-62B4-05AC-1C34-4A50CFC6DDCA" name="imagenes">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<generatorID>5036480E-EEF1-7874-1486-DE0B6BE1F38E</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_img" id="30E619E7-69DF-B101-890B-CAA466F7A8CD">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<generatorID>E608B628-B093-75D6-A8EB-6E490259067B</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ruta_imagen" id="6BD54D5C-86DC-353E-4E5B-C12781BDE780">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<generatorID>E16C1A4D-0D53-703A-9D38-D369BA33E6D5</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_at" id="F88B9DD9-5C82-1A52-9E92-C6B998D04708">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<generatorID>26475E82-A255-72E2-24AE-D371A1A7825D</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated_at" id="BE3E085E-04A9-DF89-300F-522FEE2F79C3">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<generatorID>516DA029-C78C-04CF-B721-7FEAF4D9B403</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="productos_id_producto" id="503A96AD-4C6A-7662-21AF-4EA9C63C49EF">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<generatorID>5C0D1FB9-5314-13B3-E3BE-806D62AD2552</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="00DE3A68-4AE9-B656-0221-BB45A85A4D5A" referredColumn="E715F4AB-2330-884F-90C0-917B4B3414BF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="023DF6AB-4BD0-DBFA-1FEE-1036C4AE7077" name="imagenes_PK">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<generatorID>34A61490-3115-F6BD-B394-0713522E9645</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30E619E7-69DF-B101-890B-CAA466F7A8CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E9230730-21C9-C8A8-C39D-3228FD676877" name="imagenes__IDX">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>0C6DBADB-6EF3-5E61-F9AB-765FBDBCBBDF</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="503A96AD-4C6A-7662-21AF-4EA9C63C49EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A888DCD5-DB85-D96A-B2B7-F8AEC2BF06AC" name="imagenes_productos_FK">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 21:11:09 UTC</createdTime>
+<generatorID>0C6DBADB-6EF3-5E61-F9AB-765FBDBCBBDF</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="503A96AD-4C6A-7662-21AF-4EA9C63C49EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
