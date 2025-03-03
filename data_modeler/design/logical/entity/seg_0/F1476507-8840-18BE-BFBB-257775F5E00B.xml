@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_orden_pago" id="2CD5DE5D-A7A0-1301-0945-A3CBB55E9B46">
+<Attribute name="id_pago" id="2CD5DE5D-A7A0-1301-0945-A3CBB55E9B46">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 06:53:46 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -24,8 +24,10 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
 <Attribute name="fecha_transaccion" id="1A8EC28D-C687-7EE4-7303-A9BE9384FE98">
 <createdBy>mario</createdBy>
@@ -93,10 +95,10 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_orden_compra" id="F9666992-55CD-A769-3602-E7F3F857F328">
+<Attribute name="id_orden_compra" id="D6131E3C-3DF8-4629-07AA-871E023C3A1B">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 23:39:14 UTC</createdTime>
-<generatorID>1184A736-4C4C-21D5-455B-4BBC18F93BED</generatorID>
+<createdTime>2025-03-03 08:35:43 UTC</createdTime>
+<generatorID>0E6F4B44-D20B-A664-27C2-C2E0C2C0857B</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
@@ -104,21 +106,9 @@
 <referedAttribute>EE5C0135-DB62-0979-0782-331F20230C19</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id_metodo_pago" id="23CF016B-113B-A80E-5253-5E30209AE0AD">
-<createdBy>mario</createdBy>
-<createdTime>2025-03-02 20:28:38 UTC</createdTime>
-<generatorID>08108E70-8B51-103D-2D68-6D46E6A2E287</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<referedAttribute>1C42C58F-998D-6EC1-28FF-BE79A398F9B6</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

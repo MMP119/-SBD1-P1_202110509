@@ -24,8 +24,10 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
 <Attribute name="fecha_despacho" id="018CDDAB-A3C9-77C4-DFAB-3E3893CFDC54">
 <createdBy>mario</createdBy>
@@ -118,10 +120,10 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_orden_compra" id="D576C8F4-75E5-1B53-AB2D-AFDBB2ABCA28">
+<Attribute name="id_orden_compra" id="A3AAE4FF-DB0C-C261-3BA0-914F63FEAFA7">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 23:41:07 UTC</createdTime>
-<generatorID>40B3B703-4917-A269-8AD2-21FBC22E51AB</generatorID>
+<createdTime>2025-03-03 08:35:19 UTC</createdTime>
+<generatorID>4456328E-530D-C181-1DBD-2E8EDE083346</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
@@ -129,7 +131,9 @@
 <referedAttribute>EE5C0135-DB62-0979-0782-331F20230C19</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

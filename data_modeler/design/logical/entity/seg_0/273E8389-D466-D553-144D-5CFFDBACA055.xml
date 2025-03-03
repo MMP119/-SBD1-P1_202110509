@@ -24,22 +24,23 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="total" id="69D92EFD-E7A3-5B70-C686-558D35B931FA">
+<Attribute name="fecha_creacion" id="DAF3AB1C-670E-CE27-01B0-D07B3EA4DD53">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-14 18:49:32 UTC</createdTime>
+<createdTime>2025-03-03 00:49:45 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT026</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="created_at" id="C5D03EFB-DFC7-A9B6-E2ED-E1A76F45C4AF">
 <createdBy>mario</createdBy>
@@ -67,7 +68,7 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_c" id="F2C4E6FE-FC55-456C-CF0F-6DB44433441B">
+<Attribute name="id_cliente" id="F2C4E6FE-FC55-456C-CF0F-6DB44433441B">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-13 23:34:08 UTC</createdTime>
 <generatorID>EEEE15EE-5E29-EB67-FEDB-D4558691EE55</generatorID>
@@ -78,35 +79,25 @@
 <referedAttribute>2F7A2EC9-B3FC-7B97-946B-DA837E4CBCF7</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_orden_pago" id="850749AB-1B02-7474-C9A3-3415885ED288">
+<Attribute name="id_sede" id="2CD8CF89-992B-B6BB-D128-E24166C03408">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-13 23:39:26 UTC</createdTime>
-<generatorID>1184A736-4C4C-21D5-455B-4BBC18F93BED</generatorID>
+<createdTime>2025-03-03 08:56:52 UTC</createdTime>
+<generatorID>602D7CD9-018C-FB84-5006-31971115DD33</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
 </engineerTo>
-<referedAttribute>2CD5DE5D-A7A0-1301-0945-A3CBB55E9B46</referedAttribute>
+<referedAttribute>610570A4-6C5C-E55B-6207-EE2CF9F4CFB9</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id_envios" id="F85664C5-FF98-4EA7-0E11-50404C16771A">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-13 23:41:23 UTC</createdTime>
-<generatorID>40B3B703-4917-A269-8AD2-21FBC22E51AB</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<referedAttribute>970D0A2D-8F7D-2678-8EBB-9063CF4D0B39</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

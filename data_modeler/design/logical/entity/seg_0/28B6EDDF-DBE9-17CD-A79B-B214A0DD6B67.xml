@@ -24,8 +24,10 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
 <Attribute name="direccion" id="AADD98B2-B47F-23B6-3E33-A60459AE8147">
 <createdBy>mario</createdBy>
@@ -66,10 +68,10 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_c" id="B9D9CBC1-72C1-B8C8-60BD-99D9DFF64727">
+<Attribute name="id_cliente" id="F2FFF3E4-635D-D4AF-A439-8D46670CD47A">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-14 07:04:03 UTC</createdTime>
-<generatorID>2957D5FA-58AB-6523-1277-474F396FF5CE</generatorID>
+<createdTime>2025-03-02 23:07:27 UTC</createdTime>
+<generatorID>D8ECD9C6-70DC-42B1-B70E-44129FEB73F1</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
@@ -77,7 +79,9 @@
 <referedAttribute>2F7A2EC9-B3FC-7B97-946B-DA837E4CBCF7</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -86,8 +90,9 @@
 <createdBy>mario</createdBy>
 <createdTime>2025-02-14 06:46:53 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
+<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

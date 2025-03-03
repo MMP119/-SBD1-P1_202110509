@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="20DEBD8F-7927-B4BE-B16B-82DF091BD731" name="inventario">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-03 09:06:08 UTC</createdTime>
+<generatorID>EDFB772D-CD73-C0C1-15CD-3184F8B1F5EE</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_inventario" id="51912888-8ECA-297D-57E9-A8FDB5FAD754">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-03 09:06:08 UTC</createdTime>
+<generatorID>B4299D9F-C227-5966-3542-FC892CA74A57</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stock" id="E1939DD6-5D7B-5C56-8D61-F81394AAD256">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-03 09:06:08 UTC</createdTime>
+<generatorID>EB698ED6-48DF-6493-05BF-89D2267FE77F</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_at" id="070F0558-BBE1-A4EB-0C3B-1C348F33DD28">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-03 09:06:08 UTC</createdTime>
+<generatorID>02233793-8B9B-5183-E877-493B59128D60</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated_at" id="E577FD33-0192-C5D0-15F5-F4DA00120E7A">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-03 09:06:08 UTC</createdTime>
+<generatorID>BAF4D8D5-EB42-D24D-33B8-627D6369AD64</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sedes_id_sede" id="DC3F6607-11F5-6A6D-51C4-850F8B5E12C1">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-03 09:06:08 UTC</createdTime>
+<generatorID>C3340B67-D2BC-C057-2ED2-78E359151569</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B3D7DE73-05B7-9688-49FE-D15006082C11" referredColumn="28668F92-3F6F-8CE8-5A42-6C4BDFD8A7D1"/>
+</associations>
+</Column>
+<Column name="productos_id_producto" id="CE61FA32-CC3C-7258-57A5-54E1D12DB93E">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-03 09:06:08 UTC</createdTime>
+<generatorID>37511C31-03BE-D6E8-D60F-63B7F16D4E0D</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58AEDB30-C561-D598-786D-673E3E07BFF6" referredColumn="D8720A76-1853-7C31-BE81-262B2D2E2226"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F6903FDC-2D07-53E3-0DE5-DCF259B4F347" name="inventario_PK">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-03 09:06:08 UTC</createdTime>
+<generatorID>CFF0B2C1-FFBB-E3F7-1EA0-2610EC57CA04</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51912888-8ECA-297D-57E9-A8FDB5FAD754"/>
+<colUsage columnID="CE61FA32-CC3C-7258-57A5-54E1D12DB93E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2F6A5ED3-9999-D9FF-25C9-26CB02DB8C9E" name="inventario_sedes_FK">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-03 09:06:08 UTC</createdTime>
+<generatorID>DDDF396B-7ADE-17FB-CA3C-E58FC86067C9</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC3F6607-11F5-6A6D-51C4-850F8B5E12C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5DF701BD-192F-511F-BCEB-5F082DF39923" name="inventario_productos_FK">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-03 09:06:08 UTC</createdTime>
+<generatorID>7ABD8B71-D5AD-8443-A74D-9AA872A30DB5</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE61FA32-CC3C-7258-57A5-54E1D12DB93E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

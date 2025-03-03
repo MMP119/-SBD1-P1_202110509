@@ -24,8 +24,10 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id_nacional" id="4E2981EA-0209-2086-28F6-C2C64E4DC4F9">
 <createdBy>mario</createdBy>
@@ -143,10 +145,10 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_dep" id="473DE7F4-CC41-39A1-AF28-87DF4BA235EE">
+<Attribute name="id_departamento" id="842F73ED-F634-8111-E0FE-F9FABF1E72FA">
 <createdBy>mario</createdBy>
-<createdTime>2025-03-02 21:05:39 UTC</createdTime>
-<generatorID>6A1B735C-6847-4CF1-2F6F-AC0510441E80</generatorID>
+<createdTime>2025-03-02 22:51:59 UTC</createdTime>
+<generatorID>58E98B37-4516-909B-8FCF-6B5D47A32BA3</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
@@ -154,7 +156,25 @@
 <referedAttribute>0EDB4C4A-3E29-200D-4A2F-8FE1E613711A</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_sede" id="8B678792-C05D-F268-4B5D-DD0C259BD523">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 23:03:10 UTC</createdTime>
+<generatorID>FF3F0A4F-1982-ED89-0289-596901B2F195</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
+</engineerTo>
+<referedAttribute>610570A4-6C5C-E55B-6207-EE2CF9F4CFB9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

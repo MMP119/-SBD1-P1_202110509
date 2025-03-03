@@ -24,8 +24,10 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
 <Attribute name="sku" id="41EE8672-1E9D-D8A1-7463-E981031EFE0B">
 <createdBy>mario</createdBy>
@@ -132,24 +134,10 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_img" id="0B839BA0-4D0B-ED27-00B4-18A970F6B86C">
+<Attribute name="id_categoria" id="AC2935D2-4DB4-B77A-F6FE-90133F6423B4">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-14 06:27:03 UTC</createdTime>
-<generatorID>0C6DBADB-6EF3-5E61-F9AB-765FBDBCBBDF</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<referedAttribute>E608B628-B093-75D6-A8EB-6E490259067B</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id_categoria" id="72F1AF6D-E13C-8D7E-5316-7C1F7E94E4B0">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-14 19:12:28 UTC</createdTime>
-<generatorID>A6FB3019-CD11-8AF0-F951-B2AF99B87FD0</generatorID>
+<createdTime>2025-03-02 23:18:48 UTC</createdTime>
+<generatorID>2F7CDA20-9B7A-EE77-15F3-18FA469FACD0</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
@@ -157,7 +145,9 @@
 <referedAttribute>A8F2C425-7447-9104-8D32-95F68DBD405A</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

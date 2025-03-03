@@ -24,8 +24,10 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
 <Attribute name="fecha_solicitud" id="867BF3C5-919E-4144-F16B-4E5D90034345">
 <createdBy>mario</createdBy>
@@ -92,18 +94,21 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_orden_compra" id="61043A4D-EA72-B6FE-28EE-7AE6FA8088CA">
+<Attribute name="id_orden_compra" id="24C1C2F0-545C-467F-61EB-F5C1E8227782">
 <createdBy>mario</createdBy>
-<createdTime>2025-02-14 19:18:24 UTC</createdTime>
-<generatorID>0C4E5744-CCF9-4AFB-84C6-26914D3EC6EE</generatorID>
+<createdTime>2025-03-03 09:02:29 UTC</createdTime>
+<generatorID>F63FDD3F-4C37-D0B0-B867-E17DAE1535CA</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <referedAttribute>EE5C0135-DB62-0979-0782-331F20230C19</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

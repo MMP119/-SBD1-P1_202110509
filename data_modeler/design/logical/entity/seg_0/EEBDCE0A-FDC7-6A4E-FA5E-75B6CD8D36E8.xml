@@ -24,8 +24,10 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
 <Attribute name="nombre" id="E87B13D1-FF21-318A-D301-475B5C8A11F2">
 <createdBy>mario</createdBy>
@@ -66,28 +68,15 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_producto" id="0943CCEF-1EA0-1C6B-B826-D178FD7CC28E">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-14 19:12:15 UTC</createdTime>
-<generatorID>A6FB3019-CD11-8AF0-F951-B2AF99B87FD0</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<referedAttribute>C18FD71C-A767-CC22-221B-489FB888EBDA</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="6B6DB291-FBF9-E7DB-F633-0E9A85CD32A6" name="sede PK">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-14 19:11:23 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
+<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

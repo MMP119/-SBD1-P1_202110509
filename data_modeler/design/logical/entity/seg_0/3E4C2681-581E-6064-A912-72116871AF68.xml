@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_c" id="2F7A2EC9-B3FC-7B97-946B-DA837E4CBCF7">
+<Attribute name="id_cliente" id="2F7A2EC9-B3FC-7B97-946B-DA837E4CBCF7">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-11 22:49:01 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -24,8 +24,10 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id_nacional" id="1B00BB95-EEFA-10EB-F1A9-218191A71A6E">
 <createdBy>mario</createdBy>
@@ -78,19 +80,6 @@
 <dataTypeSize>100 CHAR</dataTypeSize>
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="contrasena" id="3CCFE943-726D-7D3A-407B-48B495374FC9">
-<createdBy>mario</createdBy>
-<createdTime>2025-03-02 19:13:18 UTC</createdTime>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100 CHAR</dataTypeSize>
-<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="telefono" id="0B57FC1D-3242-AC03-4A7C-301C290D4E31">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 03:04:21 UTC</createdTime>
@@ -130,6 +119,19 @@
 <dataTypeSize>5</dataTypeSize>
 <ownDataTypeParameters>5,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="contrasena" id="3CCFE943-726D-7D3A-407B-48B495374FC9">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-02 19:13:18 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="created_at" id="6A5FE124-DFB9-13AD-EAC8-0DA0689F2AA5">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 03:07:42 UTC</createdTime>
@@ -155,34 +157,6 @@
 <logicalDatatype>LOGDT015</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id_direccion" id="2C408B78-0B27-D330-4889-5A7EB74FA3FA">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-14 07:04:15 UTC</createdTime>
-<generatorID>2957D5FA-58AB-6523-1277-474F396FF5CE</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<referedAttribute>273F8F22-2358-1CD1-450B-6EB231B6B083</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id_metodo_pago" id="594F422D-4978-8ABF-19DD-350F4C829F23">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-14 07:05:17 UTC</createdTime>
-<generatorID>1EBFF47A-2FB1-5826-FC30-00FE81D5CA50</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<referedAttribute>1C42C58F-998D-6EC1-28FF-BE79A398F9B6</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
