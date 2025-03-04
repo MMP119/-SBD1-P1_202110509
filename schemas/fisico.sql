@@ -3,7 +3,7 @@ CREATE TABLE clientes (
     national_document NUMBER NOT NULL UNIQUE,
     name VARCHAR2(50) NOT NULL,
     lastname VARCHAR2(50) NOT NULL,
-    phone VARCHAR2(20) NOT NULL,
+    phone VARCHAR2(35) NOT NULL,
     email VARCHAR2(100) NOT NULL UNIQUE,
     active VARCHAR2(5) DEFAULT 'FALSE' NOT NULL,
     confirmed_email VARCHAR2(5) DEFAULT 'FALSE' NOT NULL,

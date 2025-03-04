@@ -17,6 +17,14 @@ pip freeze > requirements.txt   # guarda las dependencias en requirements.txt
 
 
 <br>
+<br>
+ERROR DE LIBRERÍAS DE ORACLE SOLUCIÓN:
+<br>
+export LD_LIBRARY_PATH=/home/mario/oracle/instantclient
+
+
+
+<br>
 borar todas las tablas
 <br>
 BEGIN
@@ -24,3 +32,5 @@ BEGIN
         EXECUTE IMMEDIATE 'DROP TABLE ' || t.table_name || ' CASCADE CONSTRAINTS PURGE';
     END LOOP;
 END;
+
+
