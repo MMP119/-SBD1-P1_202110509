@@ -3,6 +3,10 @@ python -m venv venv         # crear entorno virtual
 .\venv\Scripts\activate     # activar entorno virtual en Windows
 <br>
 <br>
+activar api
+<br>
+uvicorn main:app --host 0.0.0.0 --port 8000 
+<br>
 
 
 Instalar dependencias <br>

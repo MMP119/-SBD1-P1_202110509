@@ -1,11 +1,22 @@
-from fastapi import FastAPI
-from sbd1_api.app.routes import clientes
+from fastapi import FastAPI, Depends
+import cx_Oracle
+from database import get_db_connection
+from routes.clientes import router as clientes_router
 
-app = FastAPI(title="SBD1 API", version="0.1.0")
+app = FastAPI()
 
-app.include_router(clientes.router)
+
+app.include_router(clientes_router)
+
+
+@app.on_event("startup")
+async def startup_event():
+    try:
+        await get_db_connection()
+    except Exception as e:
+        print(e)
 
 
 @app.get("/")
 def read_root():
-    return {"message": "prueba de fastapi!"}
+    return {"message": "API con Oracle funcionando"}
