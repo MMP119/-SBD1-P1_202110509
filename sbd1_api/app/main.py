@@ -22,6 +22,10 @@ from routes.ordenes.detalle import router as detalle_ordenes_router
 from routes.ordenes.actualizar import router as actualizar_ordenes_router
 
 
+#enpointsde pagos
+from routes.pagos.consultar import router as consultar_pagos_router
+from routes.pagos.registrar import router as registrar_pagos_router
+
 app = FastAPI()
 
 
@@ -39,7 +43,8 @@ app.include_router(crear_ordenes_router)
 app.include_router(listar_ordenes_router)
 app.include_router(detalle_ordenes_router)
 app.include_router(actualizar_ordenes_router)
-
+app.include_router(consultar_pagos_router)
+app.include_router(registrar_pagos_router)
 
 
 @app.get("/")
