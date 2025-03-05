@@ -1,1 +1,0 @@
-Esquemas pydantic (validacion de datos)
