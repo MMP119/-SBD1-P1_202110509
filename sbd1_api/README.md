@@ -11,8 +11,10 @@ uvicorn main:app --reload
 <br>
 
 
-Instalar dependencias <br>
-pip install fastapi uvicorn pydantic cx_Oracle python-dotenv <br>
+Instalar dependencias 
+<br>
+pip install fastapi uvicorn pydantic cx_Oracle python-dotenv 
+<br>
 pip freeze > requirements.txt   # guarda las dependencias en requirements.txt
 
 
@@ -33,4 +35,7 @@ BEGIN
     END LOOP;
 END;
 
-
+<br>
+borrar una sola:
+<br>
+DROP TABLE clientes CASCADE CONSTRAINTS;

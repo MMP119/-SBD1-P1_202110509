@@ -4,7 +4,7 @@ CREATE TABLE clientes (
     name VARCHAR2(50) NOT NULL,
     lastname VARCHAR2(50) NOT NULL,
     phone VARCHAR2(35) NOT NULL,
-    email VARCHAR2(100) NOT NULL UNIQUE,
+    email VARCHAR2(100) NOT NULL,
     active VARCHAR2(5) DEFAULT 'FALSE' NOT NULL,
     confirmed_email VARCHAR2(5) DEFAULT 'FALSE' NOT NULL,
     password VARCHAR2(255) NOT NULL,
@@ -25,7 +25,7 @@ CREATE TABLE direcciones (
 
 
 
-CREATE TABLE metodos_pago (
+CREATE TABLE metodos_pago ( --pagos
     id_metodo_pago NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     client_id NUMBER NOT NULL,
     payment_method VARCHAR2(50) NOT NULL,
@@ -72,11 +72,11 @@ CREATE TABLE productos (
 
 CREATE TABLE imagenes(
     id_imagen NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    id_producto NUMBER NOT NULL,
-    ruta_imagen VARCHAR2(255) NOT NULL,
+    product_id NUMBER NOT NULL,
+    image VARCHAR2(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    CONSTRAINT fk_imagen_producto FOREIGN KEY (id_producto) REFERENCES productos (id_producto) ON DELETE CASCADE 
+    CONSTRAINT fk_imagen_producto FOREIGN KEY (product_id) REFERENCES productos (id_producto) ON DELETE CASCADE 
 );
 
 
@@ -94,11 +94,11 @@ CREATE TABLE trabajadores (
     id_trabajador NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY, 
     location_id NUMBER NOT NULL,
     department_id NUMBER NOT NULL,
-    id_nacional NUMBER NOT NULL UNIQUE,
+    national_document NUMBER NOT NULL UNIQUE,
     name VARCHAR2(50) NOT NULL,
     lastname VARCHAR2(50) NOT NULL,
     job VARCHAR2(50) NOT NULL,
-    phone VARCHAR2(20) NOT NULL,
+    phone VARCHAR2(35) NOT NULL,
     email VARCHAR2(100) NOT NULL UNIQUE,
     active VARCHAR2(5) DEFAULT 'FALSE' NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
@@ -122,13 +122,13 @@ CREATE TABLE inventarios (
 
 
 
-CREATE TABLE traslados_internos (
+CREATE TABLE traslados_internos ( --movimientos
     id_traslado_interno NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    fecha_movimiento TIMESTAMP NOT NULL,
+    requested_at TIMESTAMP NOT NULL,
     location_origin_id NUMBER NOT NULL,
     location_dest_id NUMBER NOT NULL,
-    estado VARCHAR2(50) NOT NULL,
-    fecha_estimada_llegada TIMESTAMP NOT NULL,
+    status VARCHAR2(25) NOT NULL,
+    estimate_arrive_date TIMESTAMP NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
     CONSTRAINT fk_traslado_interno_sede_origen FOREIGN KEY (location_origin_id) REFERENCES sedes (id_sede) ON DELETE CASCADE,
@@ -137,7 +137,7 @@ CREATE TABLE traslados_internos (
 
 
 
-CREATE TABLE listas_prod_tras_int (
+CREATE TABLE listas_prod_tras_int ( --movimientos_productos
     id_lista_prod_tras_int NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     movement_id NUMBER NOT NULL,
     product_id NUMBER NOT NULL,
@@ -150,7 +150,7 @@ CREATE TABLE listas_prod_tras_int (
 
 
 
-CREATE TABLE orden_compras (
+CREATE TABLE orden_compras ( --ordenes
     id_orden_compra NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     client_id NUMBER NOT NULL,
     location_id NUMBER NOT NULL,
@@ -162,7 +162,7 @@ CREATE TABLE orden_compras (
 
 
 
-CREATE TABLE orden_detalles(
+CREATE TABLE orden_detalles( --ordenes_productos
     id_orden_detalles NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     order_id NUMBER NOT NULL,
     product_id NUMBER NOT NULL,
@@ -176,7 +176,7 @@ CREATE TABLE orden_detalles(
 
 
 
-CREATE TABLE envios (
+CREATE TABLE envios ( --ordenes_entregadas
     id_envios NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     order_id NUMBER NOT NULL,
     company VARCHAR2(150) NOT NULL,
@@ -191,7 +191,7 @@ CREATE TABLE envios (
 
 
 
-CREATE TABLE pagos(
+CREATE TABLE pagos( --pagos_ordenes
     id_pago NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     order_id NUMBER NOT NULL,
     payment_method VARCHAR2(50) NOT NULL,
@@ -202,13 +202,13 @@ CREATE TABLE pagos(
 );
 
 
-CREATE TABLE devoluciones(
+CREATE TABLE devoluciones( --productos_devolucion
     id_devolucion NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    order_id NUMBER NOT NULL,
+    product_id NUMBER NOT NULL,
     description VARCHAR2(255) NOT NULL,
-    status VARCHAR2(50) NOT NULL,
+    status VARCHAR2(25) NOT NULL,
     requested_at TIMESTAMP NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    CONSTRAINT fk_devolucion_orden_compra FOREIGN KEY (order_id) REFERENCES orden_compras (id_orden_compra) ON DELETE CASCADE
+    CONSTRAINT fk_devolucion_producto FOREIGN KEY (product_id) REFERENCES productos (id_producto) ON DELETE CASCADE
 );
