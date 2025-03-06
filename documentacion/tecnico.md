@@ -4,13 +4,13 @@
 
 ---
 
-# Descripción del Proyecto
+## Descripción del Proyecto
 
 En el contexto de los sistemas de comercio electrónico, la gestión eficiente de datos es fundamental para garantizar el correcto funcionamiento de las operaciones de compra, venta y distribución de productos. Este proyecto tiene como objetivo el diseño y desarrollo de una base de datos relacional eficiente y normalizada para un centro de ventas en línea de gran escala, similar a plataformas como Amazon o Alibaba.
 
 ---
 
-# Herramientas Utilizadas
+## Herramientas Utilizadas
 
 - **Lenguaje de Programación:** Python
 - **Frameworks:** FastAPI
@@ -20,7 +20,7 @@ En el contexto de los sistemas de comercio electrónico, la gestión eficiente d
 
 ---
 
-# Requisitos del Sistema
+## Requisitos del Sistema
 
 - Sistema Operativo: Windows 10 o superior, Ubuntu 24.04
 - Memoria RAM: Mínimo 4 GB
@@ -29,19 +29,19 @@ En el contexto de los sistemas de comercio electrónico, la gestión eficiente d
 
 ---
 
-# Modelo Conceptual
+## Modelo Conceptual
 
 ![conceptual.png](conceptual.png)
 
 ---
 
-# Modelo Lógico
+## Modelo Lógico
 
 ![Logical.svg](Logical.svg)
 
 ---
 
-# Modelo Físico
+## Modelo Físico
 
 ![fisico.svg](fisico.svg)
 
