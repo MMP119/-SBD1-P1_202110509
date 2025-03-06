@@ -1,10 +1,14 @@
-# Manual Técnico
+# <center>Manual Técnico</center>
 
-## Mario Ernesto Marroquín Pérez - 202110509
+### <center>Mario Ernesto Marroquín Pérez - 202110509
+
+---
 
 # Descripción del Proyecto
 
 En el contexto de los sistemas de comercio electrónico, la gestión eficiente de datos es fundamental para garantizar el correcto funcionamiento de las operaciones de compra, venta y distribución de productos. Este proyecto tiene como objetivo el diseño y desarrollo de una base de datos relacional eficiente y normalizada para un centro de ventas en línea de gran escala, similar a plataformas como Amazon o Alibaba.
+
+---
 
 # Herramientas Utilizadas
 
@@ -14,6 +18,8 @@ En el contexto de los sistemas de comercio electrónico, la gestión eficiente d
 - **IDE:** Visual Studio Code
 - **Control de Versiones**: Git y GitHub
 
+---
+
 # Requisitos del Sistema
 
 - Sistema Operativo: Windows 10 o superior, Ubuntu 24.04
@@ -21,17 +27,25 @@ En el contexto de los sistemas de comercio electrónico, la gestión eficiente d
 - Espacio en Disco: Mínimo 500 MB
 - Software Adicional: Oracle Database, Python 3.8 o superior, DBeaver
 
+---
+
 # Modelo Conceptual
 
 ![conceptual.png](conceptual.png)
+
+---
 
 # Modelo Lógico
 
 ![Logical.svg](Logical.svg)
 
+---
+
 # Modelo Físico
 
 ![fisico.svg](fisico.svg)
+
+---
 
 # Proceso de Normalización
 
@@ -82,7 +96,7 @@ Ahora cada dirección está en una fila separada, cumpliendo la 1NF.
 - Debe cumplir la 1NF.
 - Elimina dependencias parciales. Esto significa que toda columna no clave debe depender completamente de la clave primaria.
 
-**Ejemplo: Tabla** orden_detalles **antes de la 2NF**
+Tabla orden_detalles antes de la 2NF
 
 | order_id | product_id | product_name | quantity | price |
 | --- | --- | --- | --- | --- |
@@ -141,6 +155,8 @@ Nueva tabla para ciudades:
 
 Con esta separación, state ya no está directamente en clientes, eliminando la dependencia transitiva.
 
+---
+
 ## **Proceso de Normalización - Tabla Trabajadores**
 
 ### **Forma No Normalizada**
@@ -156,11 +172,9 @@ Con esta separación, state ya no está directamente en clientes, eliminando la 
 
 ### Reglas aplicadas:
 
-Cada columna almacena un solo valor atómico.
-
-Cada fila tiene un identificador único.
-
-Eliminamos grupos repetitivos (departamentos y sedes en la misma tabla).
+- Cada columna almacena un solo valor atómico.
+- Cada fila tiene un identificador único.
+- Eliminamos grupos repetitivos (departamentos y sedes en la misma tabla).
 
 ### Nueva tabla trabajadores
 
@@ -192,13 +206,10 @@ Ahora, los departamentos y sedes se referencian por un ID en lugar del nombre.
 
 ### Reglas aplicadas:
 
-Eliminamos dependencias parciales (cada atributo depende completamente de la clave primaria).
-
-Creamos nuevas tablas para la relación entre trabajadores y sedes.
-
-En 1NF, la sede estaba en la tabla trabajadores, pero no todos los trabajadores tienen sede.
-
-Para mejorar, separamos la relación trabajadores-sedes en otra tabla.
+- Eliminamos dependencias parciales (cada atributo depende completamente de la clave primaria).
+- Creamos nuevas tablas para la relación entre trabajadores y sedes.
+- En 1NF, la sede estaba en la tabla trabajadores, pero no todos los trabajadores tienen sede.
+- Para mejorar, separamos la relación trabajadores-sedes en otra tabla.
 
 ### **Nueva tabla trabajadores (sin sede_id)**
 
@@ -213,11 +224,10 @@ Para mejorar, separamos la relación trabajadores-sedes en otra tabla.
 
 ### **Reglas aplicadas**:
 
-**Eliminamos dependencias transitivas** (datos que no dependen directamente de la clave primaria).
+- Eliminamos dependencias transitivas (datos que no dependen directamente de la clave primaria).
+- Creamos una tabla para los cargos porque hay trabajadores con el mismo cargo.
 
-**Creamos una tabla para los** cargos **porque hay trabajadores con el mismo cargo.**
-
-### **Nueva tabla** trabajadores **(sin** cargo**)**
+### Nueva tabla trabajadores
 
 | trabajador_id | nacional_documento | nombre | apellido | cargo_id | departamento_id | telefono | email | activo |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -226,11 +236,13 @@ Para mejorar, separamos la relación trabajadores-sedes en otra tabla.
 | 3 | 56781234 | Carlos | Ramírez | 3 | 2 | 555-789123 | carlos@empresa.com | FALSE |
 | 4 | 43218765 | Ana | Gómez | 4 | 3 | 555-321987 | ana@empresa.com | TRUE |
 
+---
+
 ## **Proceso de Normalización - Tabla Productos**
 
 ### **0NF (Forma No Normalizada)**
 
-Aquí los datos no están organizados correctamente. Hay **redundancia** y **dependencias innecesarias**.
+Aquí los datos no están organizados correctamente. Hay redundancia y dependencias innecesarias.
 
 | producto_id | sku | nombre | descripción | precio | slug | cantidad | sede | categoría | activo | imagenes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -242,13 +254,11 @@ Aquí los datos no están organizados correctamente. Hay **redundancia** y **dep
 
 ### **Reglas aplicadas**:
 
-**Cada columna almacena un solo valor atómico.**
+- Cada columna almacena un solo valor atómico.
+- Cada fila tiene un identificador único.
+- Eliminamos listas separadas por comas y las pasamos a tablas relacionadas.
 
-**Cada fila tiene un identificador único.**
-
-**Eliminamos listas separadas por comas y las pasamos a tablas relacionadas.**
-
-### **Nueva tabla** productos
+### Nueva tabla productos
 
 | producto_id | sku | nombre | descripción | precio | slug | categoria_id | activo |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -256,7 +266,7 @@ Aquí los datos no están organizados correctamente. Hay **redundancia** y **dep
 | 2 | XYZ456 | Mouse Logitech | Inalámbrico | 25.00 | mouse-logitech | 2 | TRUE |
 | 3 | LMN789 | Monitor Dell | 24" LED Full HD | 200.00 | monitor-dell | 3 | FALSE |
 
-### **Nueva tabla** categorias
+### Nueva tabla categorias
 
 | categoria_id | nombre |
 | --- | --- |
@@ -264,7 +274,7 @@ Aquí los datos no están organizados correctamente. Hay **redundancia** y **dep
 | 2 | Accesorios |
 | 3 | Monitores |
 
-### **Nueva tabla** sedes
+### Nueva tabla sedes
 
 Ahora los productos y sus cantidades en inventario están **separados** de la tabla principal.
 
@@ -274,7 +284,7 @@ Ahora los productos y sus cantidades en inventario están **separados** de la ta
 | 2 | 2 | 50 |
 | 3 | 1 | 20 |
 
-### **Nueva tabla** imagenes
+### Nueva tabla imagenes
 
 Ahora las imágenes de los productos están en una tabla aparte, eliminando listas dentro de una celda.
 
@@ -291,15 +301,12 @@ Ahora las imágenes de los productos están en una tabla aparte, eliminando list
 
 ### **Reglas aplicadas**:
 
-**Eliminamos dependencias parciales**.
+- Eliminamos dependencias parciales.
+- Cada dato depende completamente de la clave primaria.
+- Creamos una tabla para precios en caso de historial de cambios.
+- Separamos precios en una nueva tabla, ya que pueden cambiar con el tiempo.
 
-**Cada dato depende completamente de la clave primaria.**
-
-**Creamos una tabla para precios en caso de historial de cambios**.
-
-Separamos **precios** en una nueva tabla, ya que pueden cambiar con el tiempo.
-
-### **Nueva tabla** precios_productos
+### Nueva tabla precios_productos
 
 | precio_id | producto_id | precio | fecha_aplicacion |
 | --- | --- | --- | --- |
@@ -313,19 +320,19 @@ Ahora podemos actualizar el precio sin afectar la tabla principal.
 
 ### **Reglas aplicadas**:
 
-**Eliminamos dependencias transitivas**.
+- Eliminamos dependencias transitivas.
+- La tabla productos solo tiene datos directamente relacionados con los productos.
+- Aquí, slug es generado automáticamente a partir del nombre del producto y no necesita estar en la tabla principal.
 
-**La tabla productos solo tiene datos directamente relacionados con los productos**.
-
-Aquí, **slug** es generado automáticamente a partir del nombre del producto y no necesita estar en la tabla principal.
-
-### **Nueva tabla productos (sin slug)**
+### Nueva tabla productos
 
 | producto_id | sku | nombre | descripción | categoria_id | activo |
 | --- | --- | --- | --- | --- | --- |
 | 1 | ABC123 | Laptop HP | 16GB RAM, SSD | 1 | TRUE |
 | 2 | XYZ456 | Mouse Logitech | Inalámbrico | 2 | TRUE |
 | 3 | LMN789 | Monitor Dell | 24" LED Full HD | 3 | FALSE |
+
+---
 
 ## **Proceso de Normalización - Tabla Orden de Compra**
 
@@ -374,6 +381,8 @@ La Primera Forma Normal requiere que cada celda de la tabla contenga un valor at
 | 1 | 5001 | 2 | 20.00 |
 | 1 | 5002 | 1 | 15.00 |
 | 2 | 5003 | 3 | 30.00 |
+
+---
 
 ## **Proceso de Normalización - Tabla Traslados Internos**
 
@@ -425,11 +434,37 @@ La Primera Forma Normal requiere que cada celda de la tabla contenga un valor at
 
 Después de aplicar la normalización hasta la 3NF, hemos:
 
-- Eliminado valores multivaluados.
+- Eliminados valores multivaluados.
 - Separado dependencias parciales.
 - Eliminado dependencias transitivas.
 
 Esto garantiza que la base de datos sea eficiente y reduzca la redundancia, mejorando la integridad y consistencia de los datos.
+
+---
+
+# Matriz de Relaciones entre Tablas
+
+| Tablas | clientes | direcciones | metodos_pago | categorias | departamentos | productos | imagenes | sedes | trabajadores | inventarios | traslados_internos | listas_prod_tras_int | orden_compras | orden_detalles | envios | pagos | devoluciones |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| clientes | 1 | tiene | tiene | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | tiene | No aplica | No aplica | No aplica | No aplica |
+| direcciones | tiene | 1 | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica |
+| metodos_pago | tiene | No aplica | 1 | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica |
+| categorias | No aplica | No aplica | No aplica | 1 | No aplica | tiene | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica |
+| departamentos | No aplica | No aplica | No aplica | No aplica | 1 | No aplica | No aplica | No aplica | tiene | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica |
+| productos | No aplica | No aplica | No aplica | pertenece | No aplica | 1 | tiene | No aplica | No aplica | tiene | No aplica | pertenece | No aplica | No aplica | No aplica | No aplica | puede ser devuelto |
+| imagenes | No aplica | No aplica | No aplica | No aplica | No aplica | pertenece | 1 | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica |
+| sedes | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | 1 | tiene | tiene | participa | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica |
+| trabajadores | No aplica | No aplica | No aplica | No aplica | pertenece | No aplica | No aplica | pertenece | 1 | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica |
+| inventarios | No aplica | No aplica | No aplica | No aplica | No aplica | maneja | No aplica | pertenece | No aplica | 1 | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica |
+| traslados_internos | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | participa | No aplica | No aplica | 1 | tiene productos | No aplica | No aplica | No aplica | No aplica | No aplica |
+| listas_prod_tras_int | No aplica | No aplica | No aplica | No aplica | No aplica | pertenece | No aplica | No aplica | No aplica | No aplica | pertenece | 1 | No aplica | No aplica | No aplica | No aplica | No aplica |
+| orden_compras | realizada | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | se hace en | No aplica | No aplica | No aplica | No aplica | 1 | tiene productos | No aplica | No aplica | No aplica |
+| orden_detalles | No aplica | No aplica | No aplica | No aplica | No aplica | pertenece | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | pertenece | 1 | No aplica | No aplica | No aplica |
+| envios | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | pertenece | pertenece | 1 | No aplica | No aplica |
+| pagos | No aplica | No aplica | usa | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | pertenece | No aplica | No aplica | 1 | No aplica |
+| devoluciones | No aplica | No aplica | No aplica | No aplica | No aplica | pertenece | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica | 1 |
+
+---
 
 # Implementación
 
@@ -728,6 +763,8 @@ CREATE TABLE devoluciones( --productos_devolucion
 );
 ```
 
+---
+
 # Descripción de la API
 
 La API en el proyecto está desarrollada utilizando FastAPI y se conecta a una base de datos Oracle. La API gestiona información de compras, usuarios, productos, órdenes y pagos. A continuación, se escriben los endpoints disponibles y se proporciona un ejemplo de cada uno:
@@ -753,7 +790,7 @@ Crea un nuevo usuario en la plataforma.
 
 ### Iniciar Sesión (Login) (POST) /users/login
 
-Autentica un usuario comparando la contraseña con el hash
+Autentica un usuario comparando la contraseña con el hash, EL USERNAME ES EL NATIONAL_DOCUMENT
 
 ```json
 {
@@ -766,10 +803,25 @@ Autentica un usuario comparando la contraseña con el hash
 
 Obtiene la información de un usuario específico (datos básicos, sin exponer contraseña). Parámetro:id en la URL.
 
+Respuesta:
+
+```json
+{
+"national_document": 678140640,
+"name": "Wesley Stevens",
+"lastname": "Swanson",
+"phone": "307-314-0134",
+"email": "[edward36@example.net](mailto:edward36@example.net)",
+"active": "True",
+"confirmed_email": "False",
+"created_at": "2024-01-27T15:46:26.060000",
+"update_at": "2025-02-11T02:25:42.631000"
+}
+```
+
 ### Actualizar Usuario (PUT) /users/:id
 
-Modifica los datos de un usuario (excepto la contraseña, que
-podría ser otro endpoint separado).
+Modifica los datos de un usuario (excepto la contraseña).
 
 ```json
 {
@@ -778,9 +830,29 @@ podría ser otro endpoint separado).
 }
 ```
 
+Respuesta:
+
+```json
+{
+"status": 200,
+"message": "User updated successfully"
+}
+```
+
 ### Eliminar Usuario (DELETE) /users/:id
 
 Elimina un usuario o lo marca como inactivo.
+
+Respuesta:
+
+```json
+{
+"status": 200,
+"message": "User deleted successfully"
+}
+```
+
+---
 
 ## Gestión de Productos
 
@@ -788,9 +860,36 @@ Elimina un usuario o lo marca como inactivo.
 
  Retorna la lista de productos.
 
+```json
+{
+"products": [
+    {
+    "id": 115,
+    "name": "Awesome Glass Shoes",
+    "price": 343088659,
+    "stock": 389847
+    },
+    …
+    ]
+}
+```
+
 ### Detalle de Producto (GET) /products/:id
 
 Obtiene el detalle de un producto específico.
+
+Respuesta:
+
+```json
+{
+"id": 115,
+"name": "Awesome Glass Shoes",
+"price": 343088659,
+"description": "Near age court war entire hand. Law executive TV medical play. Feel other group writer stuff onto character people.\nLook amount reality camera. Possible only good any policy standard become.",
+"stock": 389847,
+"category": "Trendy Fitness"
+}
+```
 
 ### Crear Producto (POST) /products
 
@@ -810,6 +909,16 @@ Crea un nuevo producto (generalmente restringido a administradores o vendedores)
 }
 ```
 
+Respuesta:
+
+```json
+{
+"status": 200,
+"message": "Product created successfully",
+"productId": 22223
+}
+```
+
 ### Actualizar Producto (PUT) /products/:id
 
  Modifica la información de un producto existente.
@@ -817,13 +926,31 @@ Crea un nuevo producto (generalmente restringido a administradores o vendedores)
 ```json
 {
   "name": "string",
-  "description": "string",
+  "description": "string"
+}
+```
+
+Respuesta:
+
+```json
+{
+"status": 200,
+"message": "Product updated successfully"
 }
 ```
 
 ### Eliminar Producto (DELETE) /products/:id
 
-Elimina o desactiva un producto de la base.
+Elimina un producto de la base.
+
+```json
+{
+"status": 200,
+"message": "Product deleted successfully"
+}
+```
+
+---
 
 ## Gestión de Órdenes
 
@@ -831,17 +958,118 @@ Elimina o desactiva un producto de la base.
 
 Crea una nueva órden asociada a un usuario.
 
+```json
+{
+    "userId": 11,
+    "locationId": 2,
+    "items": [
+        {"productId": 10, "quantity": 2},
+        {"productId": 2, "quantity": 1}
+    ],
+    "shippingAddress": "Calle 123, Ciudad",
+    "paymentMethod": "bank"
+}
+```
+
+Respuesta:
+
+```json
+{
+"status": "success",
+"message": "Order created successfully",
+"orderId": 22223,
+"totalAmount": 2561843516,
+"orderStatus": "processing"
+}
+```
+
 ### Listar Órdenes (GET) /orders
 
 Retorna un listado de órdenes. 
+
+```json
+{
+    "orders":
+    [
+        {
+        "orderId":22223,
+        "userId":11,
+        "totalAmount":2561843516.0,
+        "status":"processing",
+        "createdAt":"2025-03-05"
+        },
+        {
+        "orderId":22222,
+        "userId":2,
+        "totalAmount":1841191903.0,
+        "status":"processing",
+        "createdAt":"2025-03-05"
+        }
+    ]
+}
+```
 
 ### Detalle de Órden (GET) /orders/:id
 
 Muestra la información detallada de la órden, incluyendo ítems, cantidades, etc.
 
+```json
+{
+"orderId": 1,
+"userId": 387,
+"items": [
+{
+"productId": 9652,
+"quantity": 35990,
+"price": 403581935.0
+},
+{
+"productId": 9472,
+"quantity": 22950,
+"price": 282750624.0
+},
+{
+"productId": 6564,
+"quantity": 79081,
+"price": 99703214.0
+},
+{
+"productId": 1017,
+"quantity": 89046,
+"price": 448019251.0
+},
+{
+"productId": 1213,
+"quantity": 93651,
+"price": 838240580.0
+}
+],
+"totalAmount": 147295061309910,
+"status": "pending",
+"createdAt": "2024-01-31"
+}
+```
+
 ### Actualizar Estado de Órden (PUT) orders/:id
 
 Permite cambiar el estado (processing, shipped, delivered,cancelled).
+
+```json
+{
+"status":"FAIL"
+}
+```
+
+Respuesta:
+
+```json
+{
+"status": 200,
+"message": "Estado de orden actualizada correctamente"
+}
+```
+
+---
 
 ## Gestión de Pagos
 
@@ -849,9 +1077,58 @@ Permite cambiar el estado (processing, shipped, delivered,cancelled).
 
 Registra un pago asociado a una órden.
 
+```json
+{
+"orderId": 101,
+"method": "credit_card",
+"status":"PAID"
+}
+
+```
+
+Respuesta:
+
+```json
+{
+"status": 200,
+"message": "Payment registered successfully",
+"paymentId": 
+    [
+        222228
+    ]
+}
+```
+
 ### Consultar Pagos (GET) /payments
 
-Lista los pagos realizados, con posibilidad de filtrar por orden,
+Lista los pagos realizados
+
+Respuesta:
+
+```json
+{
+    "payments":
+    [
+        {
+        "payment_Id":402,
+        "order_Id":9931,
+        "method":"BANK",
+        "status":"PENDING",
+        "createdAt":"2020-02-28T22:24:38Z"
+        },
+        {
+        "payment_Id":403,
+        "order_Id":6072,
+        "method":"BANK",
+        "status":"PAID",
+        "createdAt":"2022-06-02T19:56:40Z"
+        }
+        ...
+    ]
+}
+```
+
+---
 
 # Activar API
 
