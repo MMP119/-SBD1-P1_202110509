@@ -4,6 +4,6 @@
 
 ## Documentación:
 
-- ### Manual técnico: 
+- ### [Manual técnico](documentacion/tecnico.md) 
 
-- ### Manual de Usuario:
+- ### [Manual de Usuario](documentacion/usuario.md)

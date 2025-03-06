@@ -61,7 +61,7 @@ La normalización es un proceso estructurado para organizar los datos en una bas
 - Cada columna debe contener valores atómicos (no multivaluados).
 - Cada fila debe ser única, con una clave primaria identificadora.
 
-**Ejemplo: Tabla** clientes **antes de la 1NF**
+Tabla clientes antes de la 1NF
 
 | client_id | national_document | name | lastname | phone | email | addresses |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -128,7 +128,7 @@ Nueva tabla para productos:
 - Debe cumplir la 2NF.
 - Elimina dependencias transitivas (una columna no clave no debe depender de otra columna no clave).
 
-**Ejemplo: Tabla** clientes **antes de la 3NF**
+Tabla clientes antes de la 3NF
 
 | client_id | name | lastname | phone | email | city | state |
 | --- | --- | --- | --- | --- | --- | --- |
