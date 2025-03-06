@@ -15,7 +15,7 @@ def update_client(
     
     #verificamos que el usuario exista
     cursor = db.cursor()
-    cursor.execute("SELECT COUNT(*) FROM clientes WHERE id = :id", {"id": client_id})
+    cursor.execute("SELECT COUNT(*) FROM clientes WHERE client_id = :id", {"id": client_id})
     cliente_db = cursor.fetchone()
 
     if not cliente_db:
