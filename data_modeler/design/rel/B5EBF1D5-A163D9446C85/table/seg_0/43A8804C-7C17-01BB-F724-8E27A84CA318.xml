@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="43A8804C-7C17-01BB-F724-8E27A84CA318" name="departamentos">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-05 21:27:10 UTC</createdTime>
+<generatorID>252FA6F1-6BAD-3EAD-0FA3-75D531E3E20E</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_departamento" id="24602EDB-E9CE-A047-5E73-01105A2362CC">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-05 21:27:10 UTC</createdTime>
+<generatorID>0EDB4C4A-3E29-200D-4A2F-8FE1E613711A</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="1333EAFD-9697-9AD5-C724-4D6CB3014825">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-05 21:27:10 UTC</createdTime>
+<generatorID>473EF258-2E43-168D-003D-FE2940327D12</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_at" id="A1B5EAE3-B8CF-5DF9-A4F9-EA5F3E93071F">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-05 21:27:10 UTC</createdTime>
+<generatorID>2CE181E1-85E7-8A43-141F-A6176D5CB851</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated_at" id="43525DC5-3CF7-43AC-63D8-A8172A363EE3">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-05 21:27:10 UTC</createdTime>
+<generatorID>A2F81951-1EEA-38B6-8F07-8C1EC4DC80D9</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="896A632A-AB8E-04FD-0458-43FA58BB4DB8" name="departamentos_PK">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-05 21:27:10 UTC</createdTime>
+<generatorID>224FE423-76AF-A710-7097-0F511260A418</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24602EDB-E9CE-A047-5E73-01105A2362CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

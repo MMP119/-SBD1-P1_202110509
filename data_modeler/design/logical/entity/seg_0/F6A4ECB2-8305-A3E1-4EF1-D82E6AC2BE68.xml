@@ -29,7 +29,7 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cantidad" id="5347A40D-6EAB-86F0-AF99-F07B53605509">
+<Attribute name="quantity" id="5347A40D-6EAB-86F0-AF99-F07B53605509">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-14 00:39:24 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -40,19 +40,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="created_at" id="33868899-F633-59D1-0728-D1BC9CEF6385">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-14 00:40:35 UTC</createdTime>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT015</logicalDatatype>
-<dataTypePrecision>0</dataTypePrecision>
-<ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="updated_at" id="F73C0E3A-EA8B-665D-21FC-7FDFCF8ADFEC">
 <createdBy>mario</createdBy>
@@ -81,7 +68,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id_producto" id="C613BE67-DBA7-EFA8-80DE-7B8804AE5B5C">
 <createdBy>mario</createdBy>
@@ -97,7 +84,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

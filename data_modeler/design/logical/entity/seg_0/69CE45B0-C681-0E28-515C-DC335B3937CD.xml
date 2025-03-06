@@ -29,7 +29,7 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_nacional" id="4E2981EA-0209-2086-28F6-C2C64E4DC4F9">
+<Attribute name="national_document" id="4E2981EA-0209-2086-28F6-C2C64E4DC4F9">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 03:16:09 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -41,7 +41,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nombre" id="016CB404-016C-3943-374E-E21EAAF8E288">
+<Attribute name="name" id="016CB404-016C-3943-374E-E21EAAF8E288">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 03:16:09 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -54,7 +54,7 @@
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="apellido" id="65066ED0-8F39-F7C5-5AA1-A703D8B7BE4C">
+<Attribute name="lastname" id="65066ED0-8F39-F7C5-5AA1-A703D8B7BE4C">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 03:16:09 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -67,7 +67,7 @@
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cargo" id="BDCCAA1C-E35B-D18F-3B27-7B9DA1ED5288">
+<Attribute name="job" id="BDCCAA1C-E35B-D18F-3B27-7B9DA1ED5288">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 03:16:43 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -80,7 +80,7 @@
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="telefono" id="DAD7157D-51AC-6C61-24A1-B40932314133">
+<Attribute name="phone" id="DAD7157D-51AC-6C61-24A1-B40932314133">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 03:16:09 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -106,7 +106,7 @@
 <dataTypeSize>100 CHAR</dataTypeSize>
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="activo" id="1A0871E1-0B32-FF9B-9E35-0990FD1D85B5">
+<Attribute name="active" id="1A0871E1-0B32-FF9B-9E35-0990FD1D85B5">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 03:16:09 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -159,7 +159,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id_sede" id="8B678792-C05D-F268-4B5D-DD0C259BD523">
 <createdBy>mario</createdBy>
@@ -175,7 +175,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

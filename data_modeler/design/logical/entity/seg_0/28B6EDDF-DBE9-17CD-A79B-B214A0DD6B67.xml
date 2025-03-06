@@ -29,7 +29,7 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="direccion" id="AADD98B2-B47F-23B6-3E33-A60459AE8147">
+<Attribute name="address" id="AADD98B2-B47F-23B6-3E33-A60459AE8147">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-14 06:46:21 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -68,7 +68,7 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_cliente" id="F2FFF3E4-635D-D4AF-A439-8D46670CD47A">
+<Attribute name="client_id" id="F2FFF3E4-635D-D4AF-A439-8D46670CD47A">
 <createdBy>mario</createdBy>
 <createdTime>2025-03-02 23:07:27 UTC</createdTime>
 <generatorID>D8ECD9C6-70DC-42B1-B70E-44129FEB73F1</generatorID>
@@ -82,7 +82,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

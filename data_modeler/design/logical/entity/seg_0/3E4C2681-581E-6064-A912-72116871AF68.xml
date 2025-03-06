@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_cliente" id="2F7A2EC9-B3FC-7B97-946B-DA837E4CBCF7">
+<Attribute name="client_id" id="2F7A2EC9-B3FC-7B97-946B-DA837E4CBCF7">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-11 22:49:01 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -29,7 +29,7 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_nacional" id="1B00BB95-EEFA-10EB-F1A9-218191A71A6E">
+<Attribute name="national_document" id="1B00BB95-EEFA-10EB-F1A9-218191A71A6E">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-11 22:49:27 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -41,7 +41,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nombre" id="F2127B21-4356-CCA5-1014-5B9F3F4BC982">
+<Attribute name="name" id="F2127B21-4356-CCA5-1014-5B9F3F4BC982">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 02:45:20 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -54,7 +54,7 @@
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="apellido" id="53471BDC-E30C-5EB9-959B-C605D44DEFE5">
+<Attribute name="lastname" id="53471BDC-E30C-5EB9-959B-C605D44DEFE5">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 03:02:53 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -66,6 +66,19 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phone" id="0B57FC1D-3242-AC03-4A7C-301C290D4E31">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-12 03:04:21 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="email" id="E446D466-A116-71E4-D0C7-3B1BBF21D932">
 <createdBy>mario</createdBy>
@@ -80,20 +93,7 @@
 <dataTypeSize>100 CHAR</dataTypeSize>
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="telefono" id="0B57FC1D-3242-AC03-4A7C-301C290D4E31">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-12 03:04:21 UTC</createdTime>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="activo" id="59E1AEB2-1534-1915-3246-769EF6169DE9">
+<Attribute name="active" id="59E1AEB2-1534-1915-3246-769EF6169DE9">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 03:04:52 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -106,7 +106,7 @@
 <dataTypeSize>5 CHAR</dataTypeSize>
 <ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="correo_confirmado" id="58E1C179-CA14-EEF7-6886-FDF001414EE6">
+<Attribute name="confirmed_email" id="58E1C179-CA14-EEF7-6886-FDF001414EE6">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 03:12:25 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -119,7 +119,7 @@
 <dataTypeSize>5</dataTypeSize>
 <ownDataTypeParameters>5,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="contrasena" id="3CCFE943-726D-7D3A-407B-48B495374FC9">
+<Attribute name="password" id="3CCFE943-726D-7D3A-407B-48B495374FC9">
 <createdBy>mario</createdBy>
 <createdTime>2025-03-02 19:13:18 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>

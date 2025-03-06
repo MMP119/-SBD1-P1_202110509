@@ -42,7 +42,7 @@
 <dataTypeSize>10 CHAR</dataTypeSize>
 <ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nombre" id="A7B5A66A-0F59-9E89-CCCE-9F178AE89663">
+<Attribute name="name" id="A7B5A66A-0F59-9E89-CCCE-9F178AE89663">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 05:15:29 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -55,7 +55,7 @@
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="descripcion" id="66125F62-CA4D-8368-93D7-6D728D648874">
+<Attribute name="description" id="66125F62-CA4D-8368-93D7-6D728D648874">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 05:15:29 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -68,7 +68,7 @@
 <dataTypeSize>200 CHAR</dataTypeSize>
 <ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="precio" id="EBABA1C8-5C41-913F-30C5-32253CA98256">
+<Attribute name="price" id="EBABA1C8-5C41-913F-30C5-32253CA98256">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 05:15:29 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -95,7 +95,7 @@
 <dataTypeSize>100 CHAR</dataTypeSize>
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="activo" id="F24F7FAE-AE37-7004-0C40-E9F2DE09BCC9">
+<Attribute name="active" id="F24F7FAE-AE37-7004-0C40-E9F2DE09BCC9">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 05:15:29 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -148,7 +148,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

@@ -29,20 +29,7 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="fecha_solicitud" id="867BF3C5-919E-4144-F16B-4E5D90034345">
-<createdBy>mario</createdBy>
-<createdTime>2025-02-12 07:36:15 UTC</createdTime>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT015</logicalDatatype>
-<dataTypePrecision>0</dataTypePrecision>
-<ownDataTypeParameters>,0,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="motivo" id="7661621E-59D5-FAC7-A824-5B843AF7C9C6">
+<Attribute name="description" id="7661621E-59D5-FAC7-A824-5B843AF7C9C6">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 07:36:15 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -55,7 +42,7 @@
 <dataTypeSize>255 CHAR</dataTypeSize>
 <ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="estado" id="EE3CA248-4218-7675-7D35-466A9C0ED63C">
+<Attribute name="status" id="EE3CA248-4218-7675-7D35-466A9C0ED63C">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-12 07:36:15 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
@@ -67,6 +54,19 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20 CHAR</dataTypeSize>
 <ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="requested_at" id="867BF3C5-919E-4144-F16B-4E5D90034345">
+<createdBy>mario</createdBy>
+<createdTime>2025-02-12 07:36:15 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="created_at" id="465FDCF2-FD62-69D4-5478-D02891DDC653">
 <createdBy>mario</createdBy>
@@ -94,16 +94,16 @@
 <dataTypePrecision>0</dataTypePrecision>
 <ownDataTypeParameters>,0,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_orden_compra" id="24C1C2F0-545C-467F-61EB-F5C1E8227782">
+<Attribute name="id_producto" id="34ABB81C-2BDF-0F3F-D2C6-A813E33EC664">
 <createdBy>mario</createdBy>
-<createdTime>2025-03-03 09:02:29 UTC</createdTime>
-<generatorID>F63FDD3F-4C37-D0B0-B867-E17DAE1535CA</generatorID>
+<createdTime>2025-03-05 21:23:00 UTC</createdTime>
+<generatorID>D13A68DD-F735-D71E-C896-176A41622FB7</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="B5EBF1D5-2D62-6B6E-D83D-A163D9446C85" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<referedAttribute>EE5C0135-DB62-0979-0782-331F20230C19</referedAttribute>
+<referedAttribute>C18FD71C-A767-CC22-221B-489FB888EBDA</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>

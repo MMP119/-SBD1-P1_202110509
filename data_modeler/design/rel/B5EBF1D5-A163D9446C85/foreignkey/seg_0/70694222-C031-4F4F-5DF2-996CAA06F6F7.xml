@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="70694222-C031-4F4F-5DF2-996CAA06F6F7" containerWithKeyObject="4734522A-25DC-AD17-EF3F-E956F4FFCC86" localFKIndex="987DC6F9-FF28-5612-31B7-CC04178B49FE" name="lista_prod_tras_int_traslados_internos_FK">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-05 21:27:10 UTC</createdTime>
+<generatorID>E3C154E2-9439-E031-CD8A-995D3301F55E</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<referredTableLongName>traslados_internos</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E82858BF-FCCF-874E-EA8A-7F1E550F5E9C</referredTableID>
+<keyObject>AEA8A688-1A39-A9AE-4117-E58E91F6E0B3</keyObject>
+<referredKeyID>AEA8A688-1A39-A9AE-4117-E58E91F6E0B3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_traslado_interno</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

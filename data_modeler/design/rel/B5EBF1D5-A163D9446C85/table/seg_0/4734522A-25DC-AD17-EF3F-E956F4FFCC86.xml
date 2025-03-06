@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4734522A-25DC-AD17-EF3F-E956F4FFCC86" name="lista_prod_tras_int">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-05 21:27:10 UTC</createdTime>
+<generatorID>F6A4ECB2-8305-A3E1-4EF1-D82E6AC2BE68</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_lista_prod_tras_int" id="9C632880-A5C9-BBA9-B5A7-E4F7B282FF5A">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-05 21:27:10 UTC</createdTime>
+<generatorID>8DC26BE1-B794-9C4E-A784-72D3B86737CC</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,0,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantity" id="9D7E0731-0245-FC5E-B0C2-0AC441D0ACB1">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-05 21:27:10 UTC</createdTime>
+<generatorID>5347A40D-6EAB-86F0-AF99-F07B53605509</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated_at" id="63405DA1-0472-0DCD-2240-A0DC9588D530">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-05 21:27:10 UTC</createdTime>
+<generatorID>F73C0E3A-EA8B-665D-21FC-7FDFCF8ADFEC</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="traslados_internos_id_traslado_interno" id="208F3D70-BF60-1B5D-72F1-EECD1072DA65">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-05 21:27:10 UTC</createdTime>
+<generatorID>C16C93A7-A287-ECD8-0574-E46964AA9B8E</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="70694222-C031-4F4F-5DF2-996CAA06F6F7" referredColumn="07998EC0-85F9-B575-6B9B-4D172E942689"/>
+</associations>
+</Column>
+<Column name="productos_id_producto" id="FB42402B-DED6-A4A4-23B1-857E0B6A932F">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-05 21:27:10 UTC</createdTime>
+<generatorID>C613BE67-DBA7-EFA8-80DE-7B8804AE5B5C</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="62C3DB50-F62A-9D4E-6196-9FD0D51C0E8D" referredColumn="33C20C79-9745-F3ED-2D86-11F6179C72E0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BA71E3E6-3BC5-5214-E652-2DA537DD0A37" name="lista_prod_tras_int_PK">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-05 21:27:10 UTC</createdTime>
+<generatorID>1ED561C8-75C6-D4A1-2E28-0E0EE50A265B</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C632880-A5C9-BBA9-B5A7-E4F7B282FF5A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="987DC6F9-FF28-5612-31B7-CC04178B49FE" name="lista_prod_tras_int_traslados_internos_FK">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-05 21:27:10 UTC</createdTime>
+<generatorID>E3C154E2-9439-E031-CD8A-995D3301F55E</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="208F3D70-BF60-1B5D-72F1-EECD1072DA65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35463246-D47F-868C-7906-A291A148131F" name="lista_prod_tras_int_productos_FK">
+<createdBy>mario</createdBy>
+<createdTime>2025-03-05 21:27:10 UTC</createdTime>
+<generatorID>05B43CCB-D481-9B3C-EA52-821B760371F2</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB42402B-DED6-A4A4-23B1-857E0B6A932F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

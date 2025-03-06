@@ -29,7 +29,7 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,0,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nombre" id="E87B13D1-FF21-318A-D301-475B5C8A11F2">
+<Attribute name="name" id="E87B13D1-FF21-318A-D301-475B5C8A11F2">
 <createdBy>mario</createdBy>
 <createdTime>2025-02-14 19:11:23 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
